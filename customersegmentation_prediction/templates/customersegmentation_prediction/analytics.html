@@ -1,0 +1,225 @@
+{% extends 'customersegmentation_prediction/base.html' %}
+{% block content %}
+
+<style>
+    body {
+        background-color: #f8f9fc;
+    }
+    .kpi-card {
+        transition: transform 0.2s ease-in-out;
+        border: none;
+        border-radius: 12px;
+    }
+    .kpi-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    .text-xs { font-size: .75rem; }
+    .icon-circle {
+        height: 40px; width: 40px;
+        background-color: #f8f9fc;
+        border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+    }
+    .recommendation-card {
+        border: none;
+        border-left: 5px solid;
+        border-radius: 8px;
+        background-color: #ffffff;
+    }
+</style>
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2"><i class="bi bi-graph-up-arrow me-2"></i>Dashboard Analytics</h1>
+    <div class="text-muted small">Data Snapshot: April 2026</div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card shadow-sm h-100 py-2 kpi-card" style="border-left: 5px solid #4e73df;">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Revenue</div>
+                        <div class="h4 mb-0 font-weight-bold text-dark">{{ kpi_total_revenue }}</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="icon-circle"><i class="bi bi-currency-dollar text-primary"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card shadow-sm h-100 py-2 kpi-card" style="border-left: 5px solid #1cc88a;">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Customers</div>
+                        <div class="h4 mb-0 font-weight-bold text-dark">{{ kpi_total_customers }}</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="icon-circle"><i class="bi bi-people-fill text-success"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card shadow-sm h-100 py-2 kpi-card" style="border-left: 5px solid #36b9cc;">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Avg Spending</div>
+                        <div class="h4 mb-0 font-weight-bold text-dark">{{ kpi_avg_spending }}</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="icon-circle"><i class="bi bi-wallet2 text-info"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card shadow-sm h-100 py-2 kpi-card" style="border-left: 5px solid #f6c23e;">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Dominant Segment</div>
+                        <div class="h4 mb-0 font-weight-bold text-dark">{{ kpi_dominant_segment }}</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="icon-circle"><i class="bi bi-star-fill text-warning"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm p-3 border-0">
+            <h6 class="text-muted text-uppercase small fw-bold">Distribution</h6>
+            <h5 class="mb-3">Customer per Segment</h5>
+            <canvas id="segmentChart"></canvas>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm p-3 border-0">
+            <h6 class="text-muted text-uppercase small fw-bold">Financials</h6>
+            <h5 class="mb-3">Avg Spending per Segment</h5>
+            <canvas id="avgSpendingChart"></canvas>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm p-3 border-0">
+            <h6 class="text-muted text-uppercase small fw-bold">Correlation</h6>
+            <h5 class="mb-3">Spending vs Rental</h5>
+            <canvas id="scatterChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm p-4 mb-4 border-0">
+    <h5 class="mb-3"><i class="bi bi-table me-2 text-primary"></i>Cluster Characteristics Summary</h5>
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Cluster</th>
+                    <th>Avg Spending</th>
+                    <th>Avg Rental</th>
+                    <th>Prev Spending</th>
+                    <th>Prev Rental</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in cluster_summary %}
+                <tr>
+                    <td><span class="badge bg-dark px-3">Cluster {{ row.cluster }}</span></td>
+                    <td class="fw-bold text-primary">${{ row.avg_spending|floatformat:2 }}</td>
+                    <td>{{ row.avg_rental|floatformat:1 }}</td>
+                    <td class="text-muted">${{ row.avg_prev_spending|floatformat:2 }}</td>
+                    <td class="text-muted">{{ row.avg_prev_rental|floatformat:1 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="card shadow-sm p-4 mb-4 border-0">
+    <h5 class="mb-4"><i class="bi bi-lightbulb-fill me-2 text-warning"></i>AI Strategic Recommendations</h5>
+    <div class="row g-3">
+        {% for rec in dynamic_recs %}
+        <div class="col-md-4">
+            <div class="p-3 recommendation-card shadow-sm" style="border-left-color: {% if rec.color == 'danger' %}#e74a3b{% elif rec.color == 'primary' %}#4e73df{% else %}#1cc88a{% endif %};">
+                <h6 class="fw-bold text-{{ rec.color }}">{{ rec.title }}</h6>
+                <p class="small text-muted mb-0">{{ rec.desc }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const colors = ['#4e73df', '#1cc88a', '#f6c23e', '#e74a3b'];
+
+    new Chart(document.getElementById('segmentChart'), {
+        type: 'bar',
+        data: {
+            labels: {{ segment_labels|safe }},
+            datasets: [{
+                data: {{ segment_values|safe }},
+                backgroundColor: colors,
+                borderRadius: 5
+            }]
+        },
+        options: { plugins: { legend: { display: false } }, responsive: true }
+    });
+
+    new Chart(document.getElementById('avgSpendingChart'), {
+        type: 'bar',
+        data: {
+            labels: {{ avg_spending_labels|safe }},
+            datasets: [{
+                label: 'Avg Spending ($)',
+                data: {{ avg_spending_values|safe }},
+                backgroundColor: '#36b9cc',
+                borderRadius: 5
+            }]
+        },
+        options: { indexAxis: 'y', plugins: { legend: { display: false } }, responsive: true }
+    });
+
+    const rawData = {{ scatter_data|safe }};
+    const segments = [...new Set(rawData.map(item => item.segment))];
+    const scatterDatasets = segments.map((seg, i) => ({
+        label: seg,
+        data: rawData.filter(item => item.segment === seg),
+        backgroundColor: colors[i],
+        pointRadius: 5,
+        pointHoverRadius: 8
+    }));
+
+    new Chart(document.getElementById('scatterChart'), {
+        type: 'scatter',
+        data: { datasets: scatterDatasets },
+        options: {
+            responsive: true,
+            scales: {
+                x: { title: { display: true, text: 'Spending ($)' } },
+                y: { title: { display: true, text: 'Rentals' } }
+            }
+        }
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,22 @@
+# Python bytecode (file sampah kompilasi)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment (Jangan diupload karena sizenya sangat besar)
+venv/
+env/
+finalexam_advancedatabase/
+
+# Database Django lokal (jika ada)
+db.sqlite3
+
+# Static files (jika di-generate otomatis)
+staticfiles/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Folder VS Code (opsional)
+.vscode/

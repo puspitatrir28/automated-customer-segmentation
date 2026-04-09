@@ -1,0 +1,158 @@
+{% extends 'customersegmentation_prediction/base.html' %}
+
+{% block content %}
+<style>
+    .fade-in-up {
+        animation: fadeInUp 0.5s ease-out;
+    }
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .data-card {
+        border-radius: 15px;
+        border: none;
+        overflow: hidden;
+    }
+
+    .table thead th {
+        background-color: #f8f9fc;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: #4e73df;
+        border-bottom: 2px solid #e3e6f0;
+        padding: 15px 20px;
+    }
+
+    .table tbody td {
+        padding: 15px 20px;
+        font-size: 0.85rem;
+        color: #5a5c69;
+        vertical-align: middle;
+    }
+
+    .badge-segment {
+        padding: 8px 15px;
+        font-weight: 600;
+        font-size: 0.75rem;
+        border-radius: 8px;
+        display: inline-block;
+    }
+
+    .bg-success-subtle { background-color: #d1e7dd; color: #0f5132; border: 1px solid #badbcc; }
+    .bg-primary-subtle { background-color: #cfe2ff; color: #084298; border: 1px solid #b6d4fe; }
+    .bg-warning-subtle { background-color: #fff3cd; color: #664d03; border: 1px solid #ffecb5; }
+
+    .table-responsive::-webkit-scrollbar {
+        width: 6px; height: 6px;
+    }
+    .table-responsive::-webkit-scrollbar-thumb {
+        background: #d1d3e2; border-radius: 10px;
+    }
+
+    .search-input {
+        border: 1.5px solid #e3e6f0;
+        padding: 10px 15px 10px 40px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    .search-input:focus {
+        border-color: #4e73df;
+        box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.1);
+        transform: scale(1.01);
+    }
+    .search-icon {
+        position: absolute; left: 15px; top: 50%; transform: translateY(-50%);
+        color: #4e73df;
+    }
+</style>
+
+<div class="pt-3 pb-2 mb-4 border-bottom fade-in-up">
+    <div class="d-flex justify-content-between align-items-center">
+        <div>
+            <h1 class="h2 fw-bold"><i class="bi bi-people-fill me-2 text-primary"></i>Customer Database</h1>
+            <p class="text-muted mb-0">Manage and browse customer segmentation data from AI analysis.</p>
+        </div>
+        <a href="{% url 'export_customers' %}" class="btn btn-success px-4 py-2 shadow-sm d-flex align-items-center" style="border-radius: 10px; font-weight: 600;">
+            <i class="bi bi-file-earmark-excel me-2"></i> Export to CSV
+        </a>
+    </div>
+</div>
+
+<div class="card data-card shadow-sm fade-in-up" style="animation-delay: 0.1s;">
+    <div class="card-header bg-white py-4 border-0">
+        <div class="row align-items-center">
+            <div class="col-md-5 position-relative">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" id="tableSearch" class="form-control search-input" placeholder="Search segment, ID, or value...">
+            </div>
+            <div class="col-md-7 text-md-end mt-3 mt-md-0">
+                <span class="badge bg-light text-primary border px-3 py-2">
+                    <i class="bi bi-database me-1"></i> Total Records: {{ customer_data|length }}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body p-0">
+        <div class="table-responsive" style="max-height: 600px;">
+            <table class="table table-hover mb-0" id="customerTable">
+                <thead class="sticky-top">
+                    <tr>
+                        <th class="ps-4">Customer ID</th>
+                        <th>Segment Type</th>
+                        <th>Total Spending</th>
+                        <th>Rental Count</th>
+                        <th>Prev. Spending</th>
+                        <th class="text-center">Cluster</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in customer_data %}
+                    <tr>
+                        <td class="ps-4 fw-bold">#{{ row.customer_id }}</td>
+                        <td>
+                            {% if row.segment == "High Value" %}
+                                <span class="badge-segment bg-success-subtle">High Value</span>
+                            {% elif row.segment == "Loyal" %}
+                                <span class="badge-segment bg-primary-subtle">Loyal</span>
+                            {% else %}
+                                <span class="badge-segment bg-warning-subtle">Low Value</span>
+                            {% endif %}
+                        </td>
+                        <td class="fw-bold text-dark">${{ row.total_spending|floatformat:2 }}</td>
+                        <td><i class="bi bi-film me-1 text-muted"></i> {{ row.rental_count }}</td>
+                        <td class="text-muted small">${{ row.prev_spending|floatformat:2 }}</td>
+                        <td class="text-center">
+                            <span class="badge bg-white text-dark border shadow-sm px-3">{{ row.cluster }}</span>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6" class="text-center py-5">
+                            <i class="bi bi-inbox display-1 text-light"></i>
+                            <p class="text-muted mt-3">Data tidak tersedia di database.</p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('tableSearch').addEventListener('keyup', function() {
+        const filter = this.value.toLowerCase();
+        const rows = document.querySelectorAll('#customerTable tbody tr');
+        
+        rows.forEach(row => {
+            const text = row.innerText.toLowerCase();
+            row.style.display = text.includes(filter) ? '' : 'none';
+        });
+    });
+</script>
+{% endblock %}

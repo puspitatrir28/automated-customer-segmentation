@@ -1,0 +1,49 @@
+{% extends 'customersegmentation_prediction/base.html' %}
+
+{% block content %}
+<div class="card">
+    <h2>Customer Segmentation Analytics</h2>
+
+    <!-- Cluster Summary -->
+    <h3>Cluster Characteristics</h3>
+    <table>
+        <tr>
+            <th>Cluster</th>
+            <th>Avg Spending</th>
+            <th>Avg Rental</th>
+            <th>Prev Spending</th>
+            <th>Prev Rental</th>
+        </tr>
+        {% for row in cluster_summary %}
+        <tr>
+            <td>{{ row.cluster }}</td>
+            <td>{{ row.avg_spending }}</td>
+            <td>{{ row.avg_rental }}</td>
+            <td>{{ row.avg_prev_spending }}</td>
+            <td>{{ row.avg_prev_rental }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Customer Data -->
+    <h3>Customer Data</h3>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Segment</th>
+                <th>Spending</th>
+                <th>Rental</th>
+            </tr>
+            {% for row in customer_data %}
+            <tr>
+                <td>{{ row.customer_id }}</td>
+                <td>{{ row.segment }}</td>
+                <td>{{ row.total_spending }}</td>
+                <td>{{ row.rental_count }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}

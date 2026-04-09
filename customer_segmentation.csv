@@ -1,0 +1,1276 @@
+customer_id,month,rental_count,total_spending,prev_rental,prev_spending,segment_next,predicted_segment,is_correct,cluster,segment
+1,2005-07-01,12,50.88,7,31.93,High Value,Loyal,False,2,High Value
+1,2005-08-01,11,31.89,12,50.88,Loyal,Low Value,False,0,Low Value
+2,2005-07-01,14,75.86,1,2.99,High Value,High Value,True,2,High Value
+2,2005-08-01,11,44.89,14,75.86,High Value,High Value,True,0,Low Value
+3,2005-07-01,13,68.87,4,25.96,High Value,High Value,True,2,High Value
+3,2005-08-01,7,35.93,13,68.87,Low Value,Low Value,True,0,Low Value
+4,2005-07-01,5,21.95,6,16.94,Low Value,Low Value,True,1,Loyal
+4,2005-08-01,11,42.89,5,21.95,High Value,Low Value,False,1,Loyal
+5,2005-07-01,16,59.84,5,19.95,High Value,Low Value,False,2,High Value
+5,2005-08-01,13,53.87,16,59.84,High Value,High Value,True,2,High Value
+5,2006-02-01,1,0.99,13,53.87,Low Value,Low Value,True,0,Low Value
+6,2005-07-01,9,26.91,4,8.96,Low Value,Low Value,True,1,Loyal
+6,2005-08-01,12,48.88,9,26.91,High Value,High Value,True,2,High Value
+7,2005-07-01,11,59.89,5,10.95,High Value,High Value,True,2,High Value
+7,2005-08-01,12,59.88,11,59.89,High Value,High Value,True,2,High Value
+8,2005-07-01,12,35.88,3,13.97,Loyal,High Value,False,1,Loyal
+8,2005-08-01,8,35.92,12,35.88,Low Value,Low Value,True,0,Low Value
+9,2005-07-01,9,28.91,2,12.98,Low Value,Low Value,True,1,Loyal
+9,2005-08-01,8,31.92,9,28.91,Low Value,High Value,False,1,Loyal
+9,2006-02-01,1,4.99,8,31.92,Low Value,Low Value,True,0,Low Value
+10,2005-07-01,11,45.89,5,15.95,High Value,Low Value,False,1,Loyal
+10,2005-08-01,8,32.92,11,45.89,Low Value,Low Value,True,0,Low Value
+11,2005-07-01,11,53.89,3,15.97,High Value,High Value,True,1,Loyal
+11,2005-08-01,8,28.92,11,53.89,Low Value,High Value,False,0,Low Value
+11,2006-02-01,1,0.99,8,28.92,Low Value,Low Value,True,0,Low Value
+12,2005-07-01,13,39.87,6,26.94,High Value,High Value,True,1,Loyal
+12,2005-08-01,7,26.93,13,39.87,Low Value,High Value,False,0,Low Value
+13,2005-07-01,13,61.87,4,19.96,High Value,High Value,True,2,High Value
+13,2005-08-01,10,49.9,13,61.87,High Value,High Value,True,0,Low Value
+14,2005-07-01,12,50.88,1,4.99,High Value,High Value,True,1,Loyal
+14,2005-08-01,9,35.91,12,50.88,Low Value,Low Value,True,0,Low Value
+14,2006-02-01,1,4.99,9,35.91,Low Value,Low Value,True,0,Low Value
+15,2005-07-01,9,40.91,3,9.97,Big Spender,High Value,False,1,Loyal
+15,2005-08-01,18,79.82,9,40.91,High Value,Low Value,False,2,High Value
+15,2006-02-01,2,3.98,18,79.82,Low Value,Low Value,True,0,Low Value
+16,2005-07-01,10,34.9,4,23.96,Loyal,High Value,False,1,Loyal
+16,2005-08-01,10,48.9,10,34.9,High Value,High Value,True,2,High Value
+17,2005-07-01,9,43.91,3,20.97,Big Spender,High Value,False,1,Loyal
+17,2005-08-01,6,22.94,9,43.91,Low Value,Low Value,True,0,Low Value
+18,2005-07-01,9,33.91,4,25.96,Low Value,High Value,False,1,Loyal
+18,2005-08-01,6,18.94,9,33.91,Low Value,Low Value,True,0,Low Value
+19,2005-07-01,6,34.94,3,8.97,Low Value,High Value,False,1,Loyal
+19,2005-08-01,9,54.91,6,34.94,Big Spender,Low Value,False,2,High Value
+20,2005-07-01,10,42.9,4,14.96,High Value,High Value,True,1,Loyal
+20,2005-08-01,13,45.87,10,42.9,High Value,Low Value,False,2,High Value
+21,2005-07-01,9,31.91,5,31.95,Low Value,High Value,False,1,Loyal
+21,2005-08-01,17,79.83,9,31.91,High Value,Low Value,False,2,High Value
+21,2006-02-01,1,2.99,17,79.83,Low Value,Low Value,True,0,Low Value
+22,2005-07-01,7,31.93,1,2.99,Low Value,High Value,False,1,Loyal
+22,2005-08-01,10,54.9,7,31.93,High Value,Loyal,False,2,High Value
+22,2006-02-01,1,4.99,10,54.9,Low Value,Low Value,True,0,Low Value
+23,2005-07-01,13,60.87,5,16.95,High Value,Low Value,False,2,High Value
+23,2005-08-01,8,25.92,13,60.87,Low Value,High Value,False,0,Low Value
+23,2006-02-01,1,2.99,8,25.92,Low Value,Low Value,True,0,Low Value
+24,2005-07-01,9,26.91,5,24.95,Low Value,High Value,False,1,Loyal
+24,2005-08-01,9,33.91,9,26.91,Low Value,High Value,False,1,Loyal
+25,2005-07-01,12,39.88,6,33.94,High Value,Low Value,False,1,Loyal
+25,2005-08-01,9,30.91,12,39.88,Low Value,Low Value,True,0,Low Value
+26,2005-07-01,13,46.87,7,41.93,High Value,Low Value,False,2,High Value
+26,2005-08-01,12,57.88,13,46.87,High Value,Low Value,False,2,High Value
+27,2005-07-01,12,46.88,8,30.92,High Value,Low Value,False,2,High Value
+27,2005-08-01,10,45.9,12,46.88,High Value,High Value,True,2,High Value
+28,2005-07-01,14,51.86,5,13.95,High Value,High Value,True,1,Loyal
+28,2005-08-01,10,36.9,14,51.86,Loyal,Low Value,False,0,Low Value
+28,2006-02-01,1,2.99,10,36.9,Low Value,High Value,False,0,Low Value
+29,2005-07-01,11,46.89,7,21.93,High Value,Low Value,False,1,Loyal
+29,2005-08-01,16,68.84,11,46.89,High Value,Big Spender,False,2,High Value
+29,2006-02-01,1,0.99,16,68.84,Low Value,Low Value,True,0,Low Value
+30,2005-07-01,19,73.81,4,12.96,High Value,High Value,True,2,High Value
+30,2005-08-01,11,36.89,19,73.81,Loyal,Loyal,True,0,Low Value
+31,2005-07-01,11,48.89,11,35.89,High Value,High Value,True,2,High Value
+31,2005-08-01,4,19.96,11,48.89,Low Value,Low Value,True,0,Low Value
+32,2005-07-01,15,58.85,4,15.96,High Value,High Value,True,2,High Value
+32,2005-08-01,7,37.93,15,58.85,Low Value,Low Value,True,0,Low Value
+33,2005-07-01,8,29.92,2,19.98,Low Value,Low Value,True,1,Loyal
+33,2005-08-01,9,37.91,8,29.92,Low Value,Low Value,True,1,Loyal
+33,2006-02-01,1,0.99,9,37.91,Low Value,High Value,False,0,Low Value
+34,2005-07-01,9,33.91,3,11.97,Low Value,High Value,False,1,Loyal
+34,2005-08-01,12,43.88,9,33.91,High Value,Low Value,False,2,High Value
+35,2005-07-01,16,68.84,6,17.94,High Value,High Value,True,2,High Value
+35,2005-08-01,8,31.92,16,68.84,Low Value,Low Value,True,0,Low Value
+36,2005-07-01,13,40.87,1,0.99,High Value,High Value,True,1,Loyal
+36,2005-08-01,11,48.89,13,40.87,High Value,High Value,True,2,High Value
+37,2005-07-01,6,36.94,3,10.97,Low Value,Low Value,True,1,Loyal
+37,2005-08-01,12,43.88,6,36.94,High Value,High Value,True,2,High Value
+38,2005-07-01,18,65.82,5,15.95,High Value,Low Value,False,2,High Value
+38,2005-08-01,11,45.89,18,65.82,High Value,Low Value,False,0,Low Value
+39,2005-07-01,15,73.85,6,26.94,High Value,High Value,True,2,High Value
+39,2005-08-01,8,40.92,15,73.85,Big Spender,High Value,False,0,Low Value
+40,2005-07-01,11,40.89,4,16.96,High Value,High Value,True,1,Loyal
+40,2005-08-01,11,47.89,11,40.89,High Value,High Value,True,2,High Value
+41,2005-07-01,15,70.85,2,12.98,High Value,Low Value,False,2,High Value
+41,2005-08-01,7,31.93,15,70.85,Low Value,Low Value,True,0,Low Value
+41,2006-02-01,1,2.99,7,31.93,Low Value,Loyal,False,0,Low Value
+42,2005-07-01,16,61.84,4,12.96,High Value,High Value,True,2,High Value
+42,2005-08-01,7,30.93,16,61.84,Low Value,Low Value,True,0,Low Value
+42,2006-02-01,2,5.98,7,30.93,Low Value,Low Value,True,0,Low Value
+43,2005-07-01,12,47.88,1,4.99,High Value,High Value,True,1,Loyal
+43,2005-08-01,7,32.93,12,47.88,Low Value,Low Value,True,0,Low Value
+43,2006-02-01,2,3.98,7,32.93,Low Value,Low Value,True,0,Low Value
+44,2005-07-01,10,53.9,4,15.96,High Value,High Value,True,1,Loyal
+44,2005-08-01,6,26.94,10,53.9,Low Value,High Value,False,0,Low Value
+44,2006-02-01,1,4.99,6,26.94,Low Value,High Value,False,0,Low Value
+45,2005-07-01,9,37.91,5,17.95,Low Value,Low Value,True,1,Loyal
+45,2005-08-01,12,68.88,9,37.91,High Value,High Value,True,2,High Value
+46,2005-07-01,8,32.92,7,32.93,Low Value,Low Value,True,1,Loyal
+46,2005-08-01,16,65.84,8,32.92,High Value,Low Value,False,2,High Value
+47,2005-07-01,10,47.9,3,17.97,High Value,High Value,True,1,Loyal
+47,2005-08-01,6,26.94,10,47.9,Low Value,Low Value,True,0,Low Value
+48,2005-07-01,8,44.92,2,10.98,Big Spender,High Value,False,1,Loyal
+48,2005-08-01,4,11.96,8,44.92,Low Value,Low Value,True,0,Low Value
+49,2005-07-01,13,69.87,5,23.95,High Value,High Value,True,2,High Value
+49,2005-08-01,6,22.94,13,69.87,Low Value,Low Value,True,0,Low Value
+50,2005-07-01,17,80.83,4,11.96,High Value,High Value,True,2,High Value
+50,2005-08-01,9,51.91,17,80.83,Big Spender,Big Spender,True,0,Low Value
+51,2005-07-01,12,58.88,2,2.98,High Value,High Value,True,1,Loyal
+51,2005-08-01,16,61.84,12,58.88,High Value,Low Value,False,2,High Value
+52,2005-07-01,12,48.88,4,13.96,High Value,High Value,True,1,Loyal
+52,2005-08-01,11,38.89,12,48.88,High Value,Loyal,False,0,Low Value
+52,2006-02-01,1,4.99,11,38.89,Low Value,Low Value,True,0,Low Value
+53,2005-07-01,7,31.93,5,10.95,Low Value,High Value,False,1,Loyal
+53,2005-08-01,10,37.9,7,31.93,Loyal,Loyal,True,1,Loyal
+53,2006-02-01,2,7.98,10,37.9,Low Value,Low Value,True,0,Low Value
+54,2005-07-01,8,29.92,4,19.96,Low Value,High Value,False,1,Loyal
+54,2005-08-01,14,64.86,8,29.92,High Value,Low Value,False,2,High Value
+55,2005-07-01,7,36.93,5,18.95,Low Value,Low Value,True,1,Loyal
+55,2005-08-01,7,28.93,7,36.93,Low Value,High Value,False,0,Low Value
+56,2005-07-01,9,37.91,4,13.96,Low Value,High Value,False,1,Loyal
+56,2005-08-01,12,58.88,9,37.91,High Value,High Value,True,2,High Value
+56,2006-02-01,1,4.99,12,58.88,Low Value,Low Value,True,0,Low Value
+57,2005-07-01,15,49.85,5,20.95,High Value,High Value,True,1,Loyal
+57,2005-08-01,6,28.94,15,49.85,Low Value,Low Value,True,0,Low Value
+58,2005-07-01,9,38.91,3,6.97,Big Spender,Big Spender,True,1,Loyal
+58,2005-08-01,11,58.89,9,38.91,High Value,High Value,True,2,High Value
+58,2006-02-01,1,0.99,11,58.89,Low Value,Low Value,True,0,Low Value
+59,2005-07-01,11,60.89,3,10.97,High Value,Low Value,False,2,High Value
+59,2005-08-01,10,47.9,11,60.89,High Value,Low Value,False,0,Low Value
+60,2005-07-01,8,27.92,2,9.98,Low Value,High Value,False,1,Loyal
+60,2005-08-01,10,40.9,8,27.92,High Value,Low Value,False,1,Loyal
+60,2006-02-01,2,9.98,10,40.9,Low Value,Loyal,False,0,Low Value
+61,2005-08-01,7,24.93,6,32.94,Low Value,Low Value,True,0,Low Value
+62,2005-07-01,5,16.95,7,24.93,Low Value,High Value,False,1,Loyal
+62,2005-08-01,9,36.91,5,16.95,Low Value,Low Value,True,1,Loyal
+63,2005-07-01,14,64.86,1,0.99,High Value,High Value,True,1,Loyal
+63,2005-08-01,10,46.9,14,64.86,High Value,Low Value,False,0,Low Value
+64,2005-07-01,19,59.81,2,3.98,High Value,High Value,True,1,Loyal
+64,2005-08-01,8,22.92,19,59.81,Low Value,Low Value,True,0,Low Value
+64,2006-02-01,1,4.99,8,22.92,Low Value,Low Value,True,1,Loyal
+65,2005-07-01,9,37.91,2,12.98,Low Value,Low Value,True,1,Loyal
+65,2005-08-01,9,46.91,9,37.91,Big Spender,High Value,False,2,High Value
+66,2005-07-01,13,60.87,7,29.93,High Value,Low Value,False,2,High Value
+66,2005-08-01,13,48.87,13,60.87,High Value,High Value,True,0,Low Value
+67,2005-07-01,8,30.92,4,13.96,Low Value,High Value,False,1,Loyal
+67,2005-08-01,8,41.92,8,30.92,Big Spender,Low Value,False,1,Loyal
+68,2005-07-01,10,43.9,5,25.95,High Value,Low Value,False,1,Loyal
+68,2005-08-01,7,24.93,10,43.9,Low Value,High Value,False,0,Low Value
+69,2005-07-01,11,47.89,2,7.98,High Value,High Value,True,1,Loyal
+69,2005-08-01,9,32.91,11,47.89,Low Value,Low Value,True,0,Low Value
+69,2006-02-01,1,0.99,9,32.91,Low Value,High Value,False,0,Low Value
+70,2005-07-01,7,26.93,1,4.99,Low Value,High Value,False,1,Loyal
+70,2005-08-01,9,43.91,7,26.93,Big Spender,High Value,False,1,Loyal
+71,2005-07-01,18,70.82,3,13.97,High Value,High Value,True,2,High Value
+71,2005-08-01,7,31.93,18,70.82,Low Value,Low Value,True,0,Low Value
+72,2005-07-01,10,36.9,1,4.99,Loyal,High Value,False,1,Loyal
+72,2005-08-01,16,46.84,10,36.9,High Value,High Value,True,2,High Value
+73,2005-07-01,10,46.9,2,5.98,High Value,High Value,True,1,Loyal
+73,2005-08-01,9,33.91,10,46.9,Low Value,High Value,False,0,Low Value
+73,2006-02-01,1,2.99,9,33.91,Low Value,Low Value,True,0,Low Value
+74,2005-07-01,10,47.9,4,12.96,High Value,High Value,True,1,Loyal
+74,2005-08-01,12,35.88,10,47.9,Loyal,Low Value,False,0,Low Value
+75,2005-07-01,20,70.8,5,29.95,High Value,Low Value,False,2,High Value
+75,2005-08-01,11,39.89,20,70.8,High Value,High Value,True,0,Low Value
+75,2006-02-01,3,8.97,11,39.89,Low Value,Low Value,True,0,Low Value
+76,2005-07-01,9,25.91,6,12.94,Low Value,Low Value,True,1,Loyal
+76,2005-08-01,6,35.94,9,25.91,Low Value,Low Value,True,1,Loyal
+77,2005-07-01,7,15.93,5,21.95,Low Value,Low Value,True,1,Loyal
+77,2005-08-01,11,47.89,7,15.93,High Value,High Value,True,1,Loyal
+78,2005-07-01,14,52.86,3,17.97,High Value,High Value,True,1,Loyal
+78,2005-08-01,14,70.86,14,52.86,High Value,High Value,True,2,High Value
+79,2005-07-01,13,53.87,2,7.98,High Value,High Value,True,1,Loyal
+79,2005-08-01,4,11.96,13,53.87,Low Value,Low Value,True,0,Low Value
+80,2005-07-01,12,61.88,3,15.97,High Value,High Value,True,2,High Value
+80,2005-08-01,14,56.86,12,61.88,High Value,High Value,True,2,High Value
+80,2006-02-01,1,2.99,14,56.86,Low Value,Low Value,True,0,Low Value
+81,2005-07-01,6,23.94,3,12.97,Low Value,High Value,False,1,Loyal
+81,2005-08-01,12,55.88,6,23.94,High Value,High Value,True,2,High Value
+82,2005-07-01,11,64.89,5,20.95,High Value,High Value,True,2,High Value
+82,2005-08-01,8,32.92,11,64.89,Low Value,Low Value,True,0,Low Value
+83,2005-07-01,9,31.91,4,20.96,Low Value,Low Value,True,1,Loyal
+83,2005-08-01,8,38.92,9,31.91,Big Spender,Low Value,False,1,Loyal
+83,2006-02-01,1,4.99,8,38.92,Low Value,Low Value,True,0,Low Value
+84,2005-07-01,12,64.88,6,14.94,High Value,Low Value,False,2,High Value
+84,2005-08-01,12,48.88,12,64.88,High Value,High Value,True,0,Low Value
+85,2005-07-01,8,26.92,6,19.94,Low Value,Low Value,True,1,Loyal
+85,2005-08-01,7,25.93,8,26.92,Low Value,Low Value,True,1,Loyal
+86,2005-07-01,12,64.88,7,24.93,High Value,High Value,True,2,High Value
+86,2005-08-01,13,56.87,12,64.88,High Value,High Value,True,2,High Value
+87,2005-07-01,11,56.89,5,25.95,High Value,Low Value,False,2,High Value
+87,2005-08-01,11,49.89,11,56.89,High Value,Low Value,False,2,High Value
+87,2006-02-01,1,4.99,11,49.89,Low Value,Low Value,True,0,Low Value
+88,2005-07-01,11,44.89,3,13.97,High Value,High Value,True,1,Loyal
+88,2005-08-01,6,25.94,11,44.89,Low Value,High Value,False,0,Low Value
+89,2005-07-01,17,68.83,5,30.95,High Value,High Value,True,2,High Value
+89,2005-08-01,7,24.93,17,68.83,Low Value,Low Value,True,0,Low Value
+90,2005-07-01,12,51.88,3,8.97,High Value,High Value,True,1,Loyal
+90,2005-08-01,13,49.87,12,51.88,High Value,High Value,True,2,High Value
+91,2005-07-01,19,59.81,4,12.96,High Value,High Value,True,2,High Value
+91,2005-08-01,10,29.9,19,59.81,Loyal,Low Value,False,0,Low Value
+91,2006-02-01,1,4.99,10,29.9,Low Value,High Value,False,0,Low Value
+92,2005-07-01,15,78.85,3,14.97,High Value,High Value,True,2,High Value
+92,2005-08-01,8,28.92,15,78.85,Low Value,Low Value,True,0,Low Value
+93,2005-07-01,6,21.94,2,5.98,Low Value,High Value,False,1,Loyal
+93,2005-08-01,12,48.88,6,21.94,High Value,High Value,True,1,Loyal
+94,2005-07-01,7,28.93,5,19.95,Low Value,Low Value,True,1,Loyal
+94,2005-08-01,6,17.94,7,28.93,Low Value,Low Value,True,1,Loyal
+94,2006-02-01,1,4.99,6,17.94,Low Value,High Value,False,1,Loyal
+95,2005-07-01,9,43.91,4,8.96,Big Spender,Low Value,False,1,Loyal
+95,2005-08-01,4,19.96,9,43.91,Low Value,Low Value,True,0,Low Value
+96,2005-07-01,12,49.88,7,21.93,High Value,Low Value,False,1,Loyal
+96,2005-08-01,8,33.92,12,49.88,Low Value,Low Value,True,0,Low Value
+97,2005-07-01,12,40.88,3,8.97,High Value,High Value,True,1,Loyal
+97,2005-08-01,3,8.97,12,40.88,Low Value,Low Value,True,0,Low Value
+98,2005-07-01,9,40.91,6,25.94,Big Spender,Low Value,False,1,Loyal
+98,2005-08-01,9,35.91,9,40.91,Low Value,Low Value,True,0,Low Value
+99,2005-07-01,15,56.85,2,7.98,High Value,High Value,True,1,Loyal
+99,2005-08-01,5,24.95,15,56.85,Low Value,Low Value,True,0,Low Value
+99,2006-02-01,1,0.99,5,24.95,Low Value,High Value,False,0,Low Value
+100,2005-07-01,13,69.87,4,18.96,High Value,High Value,True,2,High Value
+100,2005-08-01,5,11.95,13,69.87,Low Value,Low Value,True,0,Low Value
+100,2006-02-01,1,0.99,5,11.95,Low Value,High Value,False,1,Loyal
+101,2005-08-01,10,31.9,12,53.88,Loyal,Loyal,True,0,Low Value
+101,2006-02-01,1,0.99,10,31.9,Low Value,High Value,False,0,Low Value
+102,2005-07-01,21,84.79,2,11.98,High Value,High Value,True,2,High Value
+102,2005-08-01,7,32.93,21,84.79,Low Value,High Value,False,0,Low Value
+103,2005-07-01,15,68.85,4,7.96,High Value,Big Spender,False,2,High Value
+103,2005-08-01,10,51.9,15,68.85,High Value,High Value,True,0,Low Value
+104,2005-07-01,10,44.9,4,8.96,High Value,Low Value,False,1,Loyal
+104,2005-08-01,8,23.92,10,44.9,Low Value,Low Value,True,0,Low Value
+105,2005-07-01,10,48.9,3,11.97,High Value,High Value,True,1,Loyal
+105,2005-08-01,9,32.91,10,48.9,Low Value,Low Value,True,0,Low Value
+106,2005-07-01,10,41.9,2,9.98,High Value,High Value,True,1,Loyal
+106,2005-08-01,9,43.91,10,41.9,Big Spender,Low Value,False,2,High Value
+107,2005-07-01,14,61.86,7,24.93,High Value,High Value,True,2,High Value
+107,2005-08-01,5,25.95,14,61.86,Low Value,High Value,False,0,Low Value
+107,2006-02-01,2,1.98,5,25.95,Low Value,Low Value,True,0,Low Value
+108,2005-07-01,13,51.87,5,24.95,High Value,High Value,True,2,High Value
+108,2005-08-01,9,44.91,13,51.87,Big Spender,Low Value,False,0,Low Value
+108,2006-02-01,1,4.99,9,44.91,Low Value,Low Value,True,0,Low Value
+109,2005-07-01,8,26.92,5,25.95,Low Value,Low Value,True,1,Loyal
+109,2005-08-01,6,26.94,8,26.92,Low Value,Low Value,True,1,Loyal
+110,2005-07-01,7,22.93,1,8.99,Low Value,High Value,False,1,Loyal
+110,2005-08-01,4,17.96,7,22.93,Low Value,Low Value,True,1,Loyal
+111,2005-07-01,9,29.91,6,22.94,Low Value,High Value,False,1,Loyal
+111,2005-08-01,9,38.91,9,29.91,Big Spender,High Value,False,1,Loyal
+111,2006-02-01,1,2.99,9,38.91,Low Value,High Value,False,0,Low Value
+112,2005-07-01,11,50.89,4,15.96,High Value,High Value,True,1,Loyal
+112,2005-08-01,13,62.87,11,50.89,High Value,High Value,True,2,High Value
+113,2005-07-01,11,43.89,6,27.94,High Value,Low Value,False,1,Loyal
+113,2005-08-01,10,39.9,11,43.89,High Value,High Value,True,0,Low Value
+114,2005-07-01,15,61.85,4,19.96,High Value,High Value,True,2,High Value
+114,2005-08-01,10,39.9,15,61.85,High Value,Low Value,False,0,Low Value
+114,2006-02-01,1,4.99,10,39.9,Low Value,Low Value,True,0,Low Value
+115,2005-07-01,15,50.85,3,10.97,High Value,Low Value,False,1,Loyal
+115,2005-08-01,8,21.92,15,50.85,Low Value,Low Value,True,0,Low Value
+115,2006-02-01,1,2.99,8,21.92,Low Value,Low Value,True,1,Loyal
+116,2005-07-01,10,41.9,6,20.94,High Value,High Value,True,1,Loyal
+116,2005-08-01,10,43.9,10,41.9,High Value,Low Value,False,2,High Value
+117,2005-07-01,5,26.95,2,5.98,Low Value,High Value,False,1,Loyal
+117,2005-08-01,10,36.9,5,26.95,Loyal,Loyal,True,1,Loyal
+118,2005-07-01,11,37.89,3,10.97,Loyal,Low Value,False,1,Loyal
+118,2005-08-01,6,27.94,11,37.89,Low Value,Low Value,True,0,Low Value
+119,2005-07-01,10,44.9,3,16.97,High Value,High Value,True,1,Loyal
+119,2005-08-01,18,77.82,10,44.9,High Value,Low Value,False,2,High Value
+120,2005-07-01,13,48.87,6,29.94,High Value,High Value,True,2,High Value
+120,2005-08-01,10,50.9,13,48.87,High Value,High Value,True,2,High Value
+120,2006-02-01,1,4.99,10,50.9,Low Value,Big Spender,False,0,Low Value
+121,2005-07-01,9,31.91,2,4.98,Low Value,High Value,False,1,Loyal
+121,2005-08-01,14,67.86,9,31.91,High Value,Low Value,False,2,High Value
+122,2005-07-01,15,61.85,7,25.93,High Value,Low Value,False,2,High Value
+122,2005-08-01,8,32.92,15,61.85,Low Value,Low Value,True,0,Low Value
+123,2005-07-01,10,45.9,5,14.95,High Value,High Value,True,1,Loyal
+123,2005-08-01,8,36.92,10,45.9,Low Value,Low Value,True,0,Low Value
+124,2005-07-01,8,37.92,1,1.99,Low Value,Low Value,True,1,Loyal
+124,2005-08-01,5,17.95,8,37.92,Low Value,Low Value,True,0,Low Value
+125,2005-07-01,16,65.84,4,19.96,High Value,High Value,True,2,High Value
+125,2005-08-01,11,45.89,16,65.84,High Value,High Value,True,0,Low Value
+126,2005-07-01,13,48.87,1,2.99,High Value,High Value,True,1,Loyal
+126,2005-08-01,11,50.89,13,48.87,High Value,High Value,True,2,High Value
+127,2005-07-01,7,36.93,3,11.97,Low Value,High Value,False,1,Loyal
+127,2005-08-01,12,56.88,7,36.93,High Value,High Value,True,2,High Value
+128,2005-07-01,16,65.84,2,8.98,High Value,High Value,True,2,High Value
+128,2005-08-01,12,43.88,16,65.84,High Value,High Value,True,0,Low Value
+129,2005-07-01,15,55.85,6,19.94,High Value,Low Value,False,2,High Value
+129,2005-08-01,13,48.87,15,55.85,High Value,Low Value,False,2,High Value
+130,2005-07-01,8,31.92,6,21.94,Low Value,High Value,False,1,Loyal
+130,2005-08-01,8,33.92,8,31.92,Low Value,Low Value,True,1,Loyal
+131,2005-07-01,12,49.88,2,14.98,High Value,High Value,True,1,Loyal
+131,2005-08-01,13,47.87,12,49.88,High Value,Low Value,False,2,High Value
+132,2005-07-01,14,44.86,6,19.94,High Value,Low Value,False,1,Loyal
+132,2005-08-01,8,30.92,14,44.86,Low Value,Low Value,True,0,Low Value
+133,2005-07-01,13,47.87,4,13.96,High Value,High Value,True,1,Loyal
+133,2005-08-01,8,26.92,13,47.87,Low Value,Low Value,True,0,Low Value
+134,2005-07-01,6,18.94,4,17.96,Low Value,Low Value,True,1,Loyal
+134,2005-08-01,9,40.91,6,18.94,Big Spender,Low Value,False,1,Loyal
+135,2005-07-01,14,57.86,3,5.97,High Value,Low Value,False,1,Loyal
+135,2005-08-01,10,35.9,14,57.86,Loyal,Low Value,False,0,Low Value
+135,2006-02-01,1,0.99,10,35.9,Low Value,High Value,False,0,Low Value
+136,2005-07-01,6,24.94,1,2.99,Low Value,High Value,False,1,Loyal
+136,2005-08-01,7,31.93,6,24.94,Low Value,Big Spender,False,1,Loyal
+137,2005-07-01,19,96.81,4,19.96,High Value,High Value,True,2,High Value
+137,2005-08-01,15,74.85,19,96.81,High Value,High Value,True,2,High Value
+138,2005-07-01,15,47.85,3,9.97,High Value,High Value,True,1,Loyal
+138,2005-08-01,14,48.86,15,47.85,High Value,High Value,True,2,High Value
+139,2005-07-01,12,51.88,4,14.96,High Value,High Value,True,1,Loyal
+139,2005-08-01,11,46.89,12,51.88,High Value,High Value,True,0,Low Value
+140,2005-07-01,7,29.93,4,15.96,Low Value,High Value,False,1,Loyal
+140,2005-08-01,7,37.93,7,29.93,Low Value,Low Value,True,1,Loyal
+141,2005-07-01,11,41.89,3,20.97,High Value,High Value,True,1,Loyal
+141,2005-08-01,17,64.83,11,41.89,High Value,High Value,True,2,High Value
+142,2005-07-01,10,41.9,2,4.98,High Value,High Value,True,1,Loyal
+142,2005-08-01,10,26.9,10,41.9,Loyal,Low Value,False,0,Low Value
+142,2006-02-01,1,0.99,10,26.9,Low Value,Low Value,True,0,Low Value
+143,2005-07-01,9,33.91,5,16.95,Low Value,Low Value,True,1,Loyal
+143,2005-08-01,6,32.94,9,33.91,Low Value,Low Value,True,1,Loyal
+144,2005-07-01,18,93.82,6,22.94,High Value,High Value,True,2,High Value
+144,2005-08-01,16,72.84,18,93.82,High Value,High Value,True,2,High Value
+145,2005-07-01,15,55.85,2,5.98,High Value,High Value,True,1,Loyal
+145,2005-08-01,10,45.9,15,55.85,High Value,Low Value,False,0,Low Value
+146,2005-07-01,7,36.93,7,25.93,Low Value,Low Value,True,1,Loyal
+146,2005-08-01,13,63.87,7,36.93,High Value,High Value,True,2,High Value
+147,2005-07-01,13,31.87,4,16.96,Loyal,High Value,False,1,Loyal
+147,2005-08-01,15,76.85,13,31.87,High Value,Low Value,False,2,High Value
+148,2005-07-01,22,100.78,5,22.95,High Value,High Value,True,2,High Value
+148,2005-08-01,18,87.82,22,100.78,High Value,High Value,True,2,High Value
+149,2005-07-01,11,54.89,7,32.93,High Value,Low Value,False,2,High Value
+149,2005-08-01,7,28.93,11,54.89,Low Value,Low Value,True,0,Low Value
+150,2005-07-01,4,17.96,2,7.98,Low Value,High Value,False,1,Loyal
+150,2005-08-01,16,68.84,4,17.96,High Value,Low Value,False,2,High Value
+151,2005-07-01,10,29.9,5,13.95,Loyal,High Value,False,1,Loyal
+151,2005-08-01,10,37.9,10,29.9,Loyal,High Value,False,1,Loyal
+152,2005-07-01,6,25.94,1,4.99,Low Value,High Value,False,1,Loyal
+152,2005-08-01,11,37.89,6,25.94,Loyal,Low Value,False,1,Loyal
+152,2006-02-01,1,4.99,11,37.89,Low Value,Low Value,True,0,Low Value
+153,2005-07-01,10,39.9,4,12.96,High Value,High Value,True,1,Loyal
+153,2005-08-01,10,41.9,10,39.9,High Value,Low Value,False,2,High Value
+154,2005-07-01,14,55.86,3,8.97,High Value,High Value,True,1,Loyal
+154,2005-08-01,10,45.9,14,55.86,High Value,Low Value,False,0,Low Value
+155,2005-07-01,10,42.9,5,27.95,High Value,High Value,True,1,Loyal
+155,2005-08-01,7,27.93,10,42.9,Low Value,Low Value,True,0,Low Value
+155,2006-02-01,2,7.98,7,27.93,Low Value,Low Value,True,0,Low Value
+156,2005-07-01,9,34.91,4,16.96,Low Value,High Value,False,1,Loyal
+156,2005-08-01,10,37.9,9,34.91,Loyal,Loyal,True,1,Loyal
+157,2005-07-01,17,52.83,1,0.99,High Value,High Value,True,1,Loyal
+157,2005-08-01,11,53.89,17,52.83,High Value,High Value,True,2,High Value
+158,2005-07-01,13,45.87,4,21.96,High Value,Low Value,False,1,Loyal
+158,2005-08-01,13,47.87,13,45.87,High Value,Low Value,False,2,High Value
+159,2005-07-01,10,38.9,2,1.98,High Value,High Value,True,1,Loyal
+159,2005-08-01,5,17.95,10,38.9,Low Value,Low Value,True,0,Low Value
+160,2005-07-01,9,28.91,3,10.97,Low Value,Low Value,True,1,Loyal
+160,2005-08-01,15,66.85,9,28.91,High Value,High Value,True,2,High Value
+161,2005-07-01,10,41.9,2,6.98,High Value,High Value,True,1,Loyal
+161,2005-08-01,12,45.88,10,41.9,High Value,Low Value,False,2,High Value
+162,2005-07-01,7,32.93,5,12.95,Low Value,Low Value,True,1,Loyal
+162,2005-08-01,4,12.96,7,32.93,Low Value,Low Value,True,0,Low Value
+162,2006-02-01,1,0.99,4,12.96,Low Value,High Value,False,1,Loyal
+163,2005-07-01,11,40.89,6,29.94,High Value,High Value,True,1,Loyal
+163,2005-08-01,10,43.9,11,40.89,High Value,High Value,True,2,High Value
+163,2006-02-01,2,7.98,10,43.9,Low Value,High Value,False,0,Low Value
+164,2005-07-01,10,38.9,3,16.97,High Value,High Value,True,1,Loyal
+164,2005-08-01,2,8.98,10,38.9,Low Value,Low Value,True,0,Low Value
+165,2005-07-01,12,49.88,2,6.98,High Value,High Value,True,1,Loyal
+165,2005-08-01,6,24.94,12,49.88,Low Value,Low Value,True,0,Low Value
+166,2005-07-01,13,56.87,4,13.96,High Value,High Value,True,2,High Value
+166,2005-08-01,10,50.9,13,56.87,High Value,Low Value,False,2,High Value
+167,2005-07-01,15,48.85,3,15.97,High Value,High Value,True,1,Loyal
+167,2005-08-01,11,43.89,15,48.85,High Value,High Value,True,0,Low Value
+168,2005-07-01,17,70.83,1,4.99,High Value,High Value,True,2,High Value
+168,2005-08-01,13,52.87,17,70.83,High Value,High Value,True,0,Low Value
+168,2006-02-01,1,0.99,13,52.87,Low Value,High Value,False,0,Low Value
+169,2005-07-01,10,49.9,2,7.98,High Value,High Value,True,1,Loyal
+169,2005-08-01,8,28.92,10,49.9,Low Value,Low Value,True,0,Low Value
+170,2005-07-01,12,56.88,2,9.98,High Value,High Value,True,1,Loyal
+170,2005-08-01,9,42.91,12,56.88,Big Spender,Low Value,False,0,Low Value
+171,2005-07-01,9,33.91,7,32.93,Low Value,Low Value,True,1,Loyal
+171,2005-08-01,9,37.91,9,33.91,Low Value,Low Value,True,1,Loyal
+172,2005-07-01,14,70.86,3,3.97,High Value,High Value,True,2,High Value
+172,2005-08-01,13,58.87,14,70.86,High Value,High Value,True,2,High Value
+173,2005-07-01,14,57.86,5,16.95,High Value,Low Value,False,2,High Value
+173,2005-08-01,8,36.92,14,57.86,Low Value,Low Value,True,0,Low Value
+174,2005-07-01,7,32.93,4,16.96,Low Value,High Value,False,1,Loyal
+174,2005-08-01,8,31.92,7,32.93,Low Value,Low Value,True,1,Loyal
+175,2005-07-01,11,46.89,2,5.98,High Value,High Value,True,1,Loyal
+175,2005-08-01,9,41.91,11,46.89,Big Spender,Big Spender,True,0,Low Value
+175,2006-02-01,2,3.98,9,41.91,Low Value,Low Value,True,0,Low Value
+176,2005-07-01,12,55.88,8,42.92,High Value,Low Value,False,2,High Value
+176,2005-08-01,12,52.88,12,55.88,High Value,High Value,True,2,High Value
+177,2005-07-01,7,22.93,5,14.95,Low Value,High Value,False,1,Loyal
+177,2005-08-01,11,33.89,7,22.93,Loyal,Low Value,False,1,Loyal
+178,2005-07-01,18,85.82,8,44.92,High Value,Low Value,False,2,High Value
+178,2005-08-01,12,58.88,18,85.82,High Value,High Value,True,0,Low Value
+178,2006-02-01,1,4.99,12,58.88,Low Value,Low Value,True,0,Low Value
+179,2005-07-01,14,68.86,2,12.98,High Value,Low Value,False,2,High Value
+179,2005-08-01,10,38.9,14,68.86,High Value,High Value,True,0,Low Value
+180,2005-07-01,10,40.9,2,5.98,High Value,High Value,True,1,Loyal
+180,2005-08-01,9,43.91,10,40.9,Big Spender,Loyal,False,2,High Value
+180,2006-02-01,1,4.99,9,43.91,Low Value,Low Value,True,0,Low Value
+181,2005-07-01,12,72.88,4,19.96,High Value,High Value,True,2,High Value
+181,2005-08-01,16,71.84,12,72.88,High Value,High Value,True,2,High Value
+181,2006-02-01,1,2.99,16,71.84,Low Value,Low Value,True,0,Low Value
+182,2005-07-01,16,48.84,4,13.96,High Value,High Value,True,1,Loyal
+182,2005-08-01,8,38.92,16,48.84,Big Spender,Big Spender,True,0,Low Value
+183,2005-07-01,11,34.89,4,14.96,Loyal,High Value,False,1,Loyal
+183,2005-08-01,7,25.93,11,34.89,Low Value,High Value,False,0,Low Value
+184,2005-07-01,9,36.91,2,3.98,Low Value,High Value,False,1,Loyal
+184,2005-08-01,9,39.91,9,36.91,Big Spender,Low Value,False,1,Loyal
+185,2005-07-01,12,50.88,3,14.97,High Value,High Value,True,1,Loyal
+185,2005-08-01,5,13.95,12,50.88,Low Value,Low Value,True,0,Low Value
+186,2005-07-01,8,26.92,6,25.94,Low Value,Low Value,True,1,Loyal
+186,2005-08-01,14,55.86,8,26.92,High Value,Low Value,False,2,High Value
+186,2006-02-01,1,2.99,14,55.86,Low Value,Low Value,True,0,Low Value
+187,2005-07-01,11,63.89,7,23.93,High Value,High Value,True,2,High Value
+187,2005-08-01,9,63.91,11,63.89,Big Spender,Big Spender,True,2,High Value
+188,2005-07-01,8,31.92,4,13.96,Low Value,High Value,False,1,Loyal
+188,2005-08-01,12,43.88,8,31.92,High Value,Low Value,False,2,High Value
+188,2006-02-01,1,2.99,12,43.88,Low Value,High Value,False,0,Low Value
+189,2005-07-01,10,37.9,5,13.95,Loyal,High Value,False,1,Loyal
+189,2005-08-01,6,35.94,10,37.9,Low Value,Low Value,True,0,Low Value
+190,2005-07-01,7,27.93,5,19.95,Low Value,Low Value,True,1,Loyal
+190,2005-08-01,12,49.88,7,27.93,High Value,Low Value,False,2,High Value
+190,2006-02-01,1,4.99,12,49.88,Low Value,Low Value,True,0,Low Value
+191,2005-07-01,9,39.91,6,17.94,Big Spender,High Value,False,1,Loyal
+191,2005-08-01,2,7.98,9,39.91,Low Value,Low Value,True,0,Low Value
+191,2006-02-01,1,0.99,2,7.98,Low Value,High Value,False,1,Loyal
+192,2005-07-01,10,35.9,1,3.99,Loyal,High Value,False,1,Loyal
+192,2005-08-01,10,52.9,10,35.9,High Value,High Value,True,2,High Value
+192,2006-02-01,1,4.99,10,52.9,Low Value,Low Value,True,0,Low Value
+193,2005-07-01,6,27.94,6,35.94,Low Value,High Value,False,0,Low Value
+193,2005-08-01,10,38.9,6,27.94,High Value,Low Value,False,1,Loyal
+193,2006-02-01,1,2.99,10,38.9,Low Value,Low Value,True,0,Low Value
+194,2005-07-01,5,25.95,5,19.95,Low Value,Low Value,True,1,Loyal
+194,2005-08-01,6,28.94,5,25.95,Low Value,Low Value,True,1,Loyal
+195,2005-08-01,8,38.92,11,47.89,Big Spender,Low Value,False,0,Low Value
+196,2005-07-01,14,63.86,8,31.92,High Value,Low Value,False,2,High Value
+196,2005-08-01,9,32.91,14,63.86,Low Value,Low Value,True,0,Low Value
+197,2005-07-01,8,35.92,8,31.92,Low Value,Low Value,True,1,Loyal
+197,2005-08-01,16,65.84,8,35.92,High Value,High Value,True,2,High Value
+198,2005-07-01,15,52.85,1,0.99,High Value,High Value,True,1,Loyal
+198,2005-08-01,16,70.84,15,52.85,High Value,Low Value,False,2,High Value
+199,2005-07-01,12,52.88,3,8.97,High Value,High Value,True,1,Loyal
+199,2005-08-01,8,30.92,12,52.88,Low Value,Low Value,True,0,Low Value
+199,2006-02-01,1,2.99,8,30.92,Low Value,Low Value,True,0,Low Value
+200,2005-07-01,10,37.9,7,31.93,Loyal,Loyal,True,1,Loyal
+200,2005-08-01,8,53.92,10,37.9,Big Spender,Low Value,False,2,High Value
+200,2006-02-01,1,2.99,8,53.92,Low Value,Low Value,True,0,Low Value
+201,2005-07-01,5,16.95,5,25.95,Low Value,Low Value,True,1,Loyal
+201,2005-08-01,12,48.88,5,16.95,High Value,Low Value,False,1,Loyal
+202,2005-07-01,13,52.87,4,9.96,High Value,High Value,True,1,Loyal
+202,2005-08-01,9,40.91,13,52.87,Big Spender,High Value,False,0,Low Value
+203,2005-07-01,7,40.93,4,18.96,Big Spender,High Value,False,1,Loyal
+203,2005-08-01,8,27.92,7,40.93,Low Value,Low Value,True,0,Low Value
+204,2005-07-01,14,48.86,6,31.94,High Value,High Value,True,2,High Value
+204,2005-08-01,11,53.89,14,48.86,High Value,Low Value,False,2,High Value
+205,2005-07-01,8,45.92,4,14.96,Big Spender,High Value,False,1,Loyal
+205,2005-08-01,6,19.94,8,45.92,Low Value,Low Value,True,0,Low Value
+206,2005-07-01,13,60.87,3,11.97,High Value,High Value,True,2,High Value
+206,2005-08-01,11,53.89,13,60.87,High Value,High Value,True,2,High Value
+207,2005-07-01,15,58.85,1,3.99,High Value,High Value,True,1,Loyal
+207,2005-08-01,12,56.88,15,58.85,High Value,Low Value,False,2,High Value
+208,2005-07-01,13,46.87,5,11.95,High Value,High Value,True,1,Loyal
+208,2005-08-01,5,21.95,13,46.87,Low Value,Low Value,True,0,Low Value
+208,2006-02-01,2,5.98,5,21.95,Low Value,Low Value,True,1,Loyal
+209,2005-07-01,17,82.83,4,19.96,High Value,High Value,True,2,High Value
+209,2005-08-01,8,44.92,17,82.83,Big Spender,Big Spender,True,0,Low Value
+210,2005-07-01,18,73.82,2,3.98,High Value,High Value,True,2,High Value
+210,2005-08-01,10,56.9,18,73.82,High Value,High Value,True,0,Low Value
+211,2005-07-01,16,62.84,2,15.98,High Value,High Value,True,2,High Value
+211,2005-08-01,14,62.86,16,62.84,High Value,High Value,True,2,High Value
+211,2006-02-01,1,4.99,14,62.86,Low Value,Low Value,True,0,Low Value
+212,2005-07-01,7,40.93,4,14.96,Big Spender,High Value,False,1,Loyal
+212,2005-08-01,9,35.91,7,40.93,Low Value,Low Value,True,0,Low Value
+213,2005-07-01,12,51.88,9,35.91,High Value,Low Value,False,2,High Value
+213,2005-08-01,5,19.95,12,51.88,Low Value,High Value,False,0,Low Value
+213,2006-02-01,1,2.99,5,19.95,Low Value,Low Value,True,1,Loyal
+214,2005-07-01,8,35.92,3,10.97,Low Value,Low Value,True,1,Loyal
+214,2005-08-01,14,53.86,8,35.92,High Value,High Value,True,2,High Value
+214,2006-02-01,1,2.99,14,53.86,Low Value,High Value,False,0,Low Value
+215,2005-07-01,7,31.93,6,23.94,Low Value,High Value,False,1,Loyal
+215,2005-08-01,10,24.9,7,31.93,Loyal,Loyal,True,1,Loyal
+215,2006-02-01,1,0.99,10,24.9,Low Value,Low Value,True,0,Low Value
+216,2005-07-01,6,32.94,5,15.95,Low Value,Low Value,True,1,Loyal
+216,2005-08-01,9,35.91,6,32.94,Low Value,Low Value,True,1,Loyal
+216,2006-02-01,2,5.98,9,35.91,Low Value,Low Value,True,0,Low Value
+217,2005-07-01,9,33.91,3,14.97,Low Value,High Value,False,1,Loyal
+217,2005-08-01,9,37.91,9,33.91,Low Value,Low Value,True,1,Loyal
+218,2005-07-01,8,37.92,3,4.97,Low Value,High Value,False,1,Loyal
+218,2005-08-01,7,24.93,8,37.92,Low Value,Low Value,True,0,Low Value
+219,2005-07-01,15,64.85,2,4.98,High Value,High Value,True,2,High Value
+219,2005-08-01,7,25.93,15,64.85,Low Value,Low Value,True,0,Low Value
+219,2006-02-01,1,4.99,7,25.93,Low Value,Low Value,True,0,Low Value
+220,2005-07-01,12,59.88,1,0.99,High Value,High Value,True,1,Loyal
+220,2005-08-01,12,48.88,12,59.88,High Value,High Value,True,0,Low Value
+221,2005-07-01,12,58.88,5,23.95,High Value,High Value,True,2,High Value
+221,2005-08-01,10,44.9,12,58.88,High Value,Low Value,False,0,Low Value
+222,2005-07-01,11,46.89,2,15.98,High Value,High Value,True,1,Loyal
+222,2005-08-01,3,8.97,11,46.89,Low Value,Big Spender,False,0,Low Value
+223,2005-07-01,7,32.93,2,10.98,Low Value,High Value,False,1,Loyal
+223,2005-08-01,7,33.93,7,32.93,Low Value,Low Value,True,1,Loyal
+224,2005-07-01,9,27.91,3,15.97,Low Value,High Value,False,1,Loyal
+224,2005-08-01,10,32.9,9,27.91,Loyal,Loyal,True,1,Loyal
+225,2005-07-01,17,80.83,1,7.99,High Value,High Value,True,2,High Value
+225,2005-08-01,6,22.94,17,80.83,Low Value,Big Spender,False,0,Low Value
+226,2005-07-01,9,41.91,2,7.98,Big Spender,High Value,False,1,Loyal
+226,2005-08-01,10,37.9,9,41.91,Loyal,Low Value,False,0,Low Value
+227,2005-07-01,12,44.88,4,12.96,High Value,High Value,True,1,Loyal
+227,2005-08-01,5,15.95,12,44.88,Low Value,High Value,False,0,Low Value
+227,2006-02-01,1,4.99,5,15.95,Low Value,Low Value,True,1,Loyal
+228,2005-07-01,15,54.85,4,13.96,High Value,High Value,True,1,Loyal
+228,2005-08-01,4,13.96,15,54.85,Low Value,Low Value,True,0,Low Value
+228,2006-02-01,2,3.98,4,13.96,Low Value,High Value,False,1,Loyal
+229,2005-07-01,13,49.87,4,14.96,High Value,High Value,True,1,Loyal
+229,2005-08-01,7,27.93,13,49.87,Low Value,Low Value,True,0,Low Value
+229,2006-02-01,1,0.99,7,27.93,Low Value,Low Value,True,0,Low Value
+230,2005-07-01,15,58.85,6,20.94,High Value,High Value,True,2,High Value
+230,2005-08-01,10,38.9,15,58.85,High Value,Low Value,False,0,Low Value
+231,2005-07-01,11,36.89,1,0.99,Loyal,High Value,False,1,Loyal
+231,2005-08-01,11,50.89,11,36.89,High Value,High Value,True,2,High Value
+232,2005-07-01,14,57.86,2,9.98,High Value,High Value,True,1,Loyal
+232,2005-08-01,7,18.93,14,57.86,Low Value,Low Value,True,0,Low Value
+233,2005-07-01,13,55.87,4,13.96,High Value,High Value,True,1,Loyal
+233,2005-08-01,6,19.94,13,55.87,Low Value,Loyal,False,0,Low Value
+234,2005-07-01,3,14.97,8,36.92,Low Value,Low Value,True,0,Low Value
+234,2005-08-01,13,53.87,3,14.97,High Value,High Value,True,1,Loyal
+234,2006-02-01,1,0.99,13,53.87,Low Value,Low Value,True,0,Low Value
+235,2005-07-01,15,62.85,2,5.98,High Value,High Value,True,2,High Value
+235,2005-08-01,6,20.94,15,62.85,Low Value,Low Value,True,0,Low Value
+236,2005-07-01,20,73.8,8,37.92,High Value,Low Value,False,2,High Value
+236,2005-08-01,10,53.9,20,73.8,High Value,High Value,True,0,Low Value
+236,2006-02-01,1,0.99,10,53.9,Low Value,High Value,False,0,Low Value
+237,2005-07-01,15,64.85,5,12.95,High Value,Low Value,False,2,High Value
+237,2005-08-01,11,60.89,15,64.85,High Value,Low Value,False,2,High Value
+238,2005-07-01,9,42.91,3,10.97,Big Spender,Low Value,False,1,Loyal
+238,2005-08-01,7,32.93,9,42.91,Low Value,Low Value,True,0,Low Value
+239,2005-07-01,12,48.88,5,23.95,High Value,High Value,True,1,Loyal
+239,2005-08-01,11,35.89,12,48.88,Loyal,Loyal,True,0,Low Value
+240,2005-07-01,12,51.88,3,14.97,High Value,High Value,True,1,Loyal
+240,2005-08-01,8,39.92,12,51.88,Big Spender,High Value,False,0,Low Value
+241,2005-07-01,15,53.85,5,11.95,High Value,High Value,True,1,Loyal
+241,2005-08-01,12,44.88,15,53.85,High Value,High Value,True,0,Low Value
+242,2005-07-01,9,38.91,6,29.94,Big Spender,High Value,False,1,Loyal
+242,2005-08-01,14,59.86,9,38.91,High Value,High Value,True,2,High Value
+243,2005-07-01,13,45.87,3,12.97,High Value,High Value,True,1,Loyal
+243,2005-08-01,7,18.93,13,45.87,Low Value,Low Value,True,0,Low Value
+244,2005-07-01,14,54.86,3,16.97,High Value,High Value,True,2,High Value
+244,2005-08-01,12,45.88,14,54.86,High Value,High Value,True,0,Low Value
+244,2006-02-01,1,4.99,12,45.88,Low Value,High Value,False,0,Low Value
+245,2005-07-01,16,72.84,3,8.97,High Value,High Value,True,2,High Value
+245,2005-08-01,6,18.94,16,72.84,Low Value,Low Value,True,0,Low Value
+245,2006-02-01,1,2.99,6,18.94,Low Value,Low Value,True,1,Loyal
+246,2005-07-01,6,27.94,5,12.95,Low Value,Low Value,True,1,Loyal
+246,2005-08-01,7,35.93,6,27.94,Low Value,Low Value,True,1,Loyal
+247,2005-07-01,7,33.93,1,5.99,Low Value,Low Value,True,1,Loyal
+247,2005-08-01,11,48.89,7,33.93,High Value,Low Value,False,2,High Value
+248,2005-07-01,6,18.94,2,4.98,Low Value,High Value,False,1,Loyal
+248,2005-08-01,5,13.95,6,18.94,Low Value,Low Value,True,1,Loyal
+249,2005-07-01,8,47.92,5,19.95,Big Spender,Low Value,False,1,Loyal
+249,2005-08-01,6,20.94,8,47.92,Low Value,Low Value,True,0,Low Value
+250,2005-07-01,7,19.93,1,4.99,Low Value,High Value,False,1,Loyal
+250,2005-08-01,7,29.93,7,19.93,Low Value,Low Value,True,1,Loyal
+251,2005-07-01,11,41.89,3,17.97,High Value,High Value,True,1,Loyal
+251,2005-08-01,10,39.9,11,41.89,High Value,High Value,True,0,Low Value
+251,2006-02-01,1,0.99,10,39.9,Low Value,Low Value,True,0,Low Value
+252,2005-07-01,10,20.9,3,11.97,Loyal,High Value,False,1,Loyal
+252,2005-08-01,6,20.94,10,20.9,Low Value,Low Value,True,1,Loyal
+252,2006-02-01,1,4.99,6,20.94,Low Value,High Value,False,1,Loyal
+253,2005-07-01,9,33.91,6,29.94,Low Value,High Value,False,1,Loyal
+253,2005-08-01,11,52.89,9,33.91,High Value,Low Value,False,2,High Value
+254,2005-07-01,13,55.87,5,13.95,High Value,High Value,True,1,Loyal
+254,2005-08-01,12,37.88,13,55.87,Loyal,Loyal,True,0,Low Value
+255,2005-07-01,7,23.93,4,15.96,Low Value,High Value,False,1,Loyal
+255,2005-08-01,7,30.93,7,23.93,Low Value,High Value,False,1,Loyal
+256,2005-07-01,6,12.94,7,30.93,Low Value,Low Value,True,0,Low Value
+256,2005-08-01,12,53.88,6,12.94,High Value,Low Value,False,1,Loyal
+257,2005-07-01,18,88.82,2,5.98,High Value,High Value,True,2,High Value
+257,2005-08-01,14,47.86,18,88.82,High Value,Low Value,False,0,Low Value
+258,2005-07-01,10,44.9,3,12.97,High Value,High Value,True,1,Loyal
+258,2005-08-01,11,52.89,10,44.9,High Value,Low Value,False,2,High Value
+259,2005-07-01,10,53.9,4,24.96,High Value,High Value,True,2,High Value
+259,2005-08-01,15,73.85,10,53.9,High Value,High Value,True,2,High Value
+260,2005-07-01,12,36.88,8,34.92,Loyal,Low Value,False,1,Loyal
+260,2005-08-01,10,41.9,12,36.88,High Value,High Value,True,2,High Value
+261,2005-07-01,7,28.93,6,23.94,Low Value,High Value,False,1,Loyal
+261,2005-08-01,9,37.91,7,28.93,Low Value,Low Value,True,1,Loyal
+262,2005-07-01,11,47.89,4,20.96,High Value,Low Value,False,1,Loyal
+262,2005-08-01,12,45.88,11,47.89,High Value,Low Value,False,2,High Value
+263,2005-07-01,13,43.87,2,10.98,High Value,High Value,True,1,Loyal
+263,2005-08-01,11,60.89,13,43.87,High Value,High Value,True,2,High Value
+263,2006-02-01,1,0.99,11,60.89,Low Value,Low Value,True,0,Low Value
+264,2005-07-01,12,51.88,4,13.96,High Value,High Value,True,1,Loyal
+264,2005-08-01,8,29.92,12,51.88,Low Value,High Value,False,0,Low Value
+264,2006-02-01,1,2.99,8,29.92,Low Value,Low Value,True,0,Low Value
+265,2005-07-01,16,70.84,3,15.97,High Value,High Value,True,2,High Value
+265,2005-08-01,9,45.91,16,70.84,Big Spender,Big Spender,True,0,Low Value
+266,2005-07-01,5,20.95,4,20.96,Low Value,Low Value,True,1,Loyal
+266,2005-08-01,17,71.83,5,20.95,High Value,High Value,True,2,High Value
+267,2005-07-01,11,45.89,9,38.91,High Value,High Value,True,2,High Value
+267,2005-08-01,11,49.89,11,45.89,High Value,Low Value,False,2,High Value
+267,2006-02-01,2,7.98,11,49.89,Low Value,Low Value,True,0,Low Value
+268,2005-08-01,9,42.91,12,53.88,Big Spender,Loyal,False,0,Low Value
+269,2005-08-01,10,45.9,9,46.91,High Value,Low Value,False,2,High Value
+269,2006-02-01,2,3.98,10,45.9,Low Value,Low Value,True,0,Low Value
+270,2005-08-01,12,44.88,7,30.93,High Value,Low Value,False,2,High Value
+271,2005-08-01,7,25.93,9,30.91,Low Value,Low Value,True,1,Loyal
+272,2005-08-01,7,28.93,6,36.94,Low Value,High Value,False,0,Low Value
+273,2005-08-01,13,62.87,15,67.85,High Value,High Value,True,2,High Value
+274,2005-08-01,16,69.84,10,45.9,High Value,Low Value,False,2,High Value
+274,2006-02-01,1,0.99,16,69.84,Low Value,Low Value,True,0,Low Value
+275,2005-08-01,16,59.84,9,32.91,High Value,High Value,True,2,High Value
+276,2005-08-01,12,48.88,11,45.89,High Value,Low Value,False,2,High Value
+277,2005-08-01,12,61.88,12,46.88,High Value,High Value,True,2,High Value
+278,2005-08-01,12,33.88,9,37.91,Loyal,High Value,False,0,Low Value
+279,2005-08-01,14,66.86,9,42.91,High Value,Low Value,False,2,High Value
+279,2006-02-01,1,4.99,14,66.86,Low Value,Low Value,True,0,Low Value
+280,2005-08-01,12,68.88,11,34.89,High Value,High Value,True,2,High Value
+281,2005-08-01,2,4.98,8,27.92,Low Value,Low Value,True,0,Low Value
+282,2005-08-01,4,13.96,15,64.85,Low Value,Low Value,True,0,Low Value
+282,2006-02-01,1,0.99,4,13.96,Low Value,High Value,False,1,Loyal
+283,2005-08-01,6,17.94,17,50.83,Low Value,Low Value,True,0,Low Value
+284,2005-08-01,8,41.92,12,60.88,Big Spender,Big Spender,True,0,Low Value
+284,2006-02-01,2,5.98,8,41.92,Low Value,Low Value,True,0,Low Value
+285,2005-08-01,10,48.9,13,68.87,High Value,Low Value,False,0,Low Value
+286,2005-08-01,7,19.93,17,76.83,Low Value,Low Value,True,0,Low Value
+287,2005-08-01,10,38.9,11,40.89,High Value,High Value,True,0,Low Value
+287,2006-02-01,1,0.99,10,38.9,Low Value,Low Value,True,0,Low Value
+288,2005-08-01,10,29.9,9,22.91,Loyal,Loyal,True,1,Loyal
+289,2005-08-01,12,54.88,12,49.88,High Value,Low Value,False,2,High Value
+290,2005-08-01,8,28.92,14,51.86,Low Value,Low Value,True,0,Low Value
+291,2005-08-01,5,20.95,12,52.88,Low Value,Low Value,True,0,Low Value
+292,2005-08-01,6,27.94,16,74.84,Low Value,Low Value,True,0,Low Value
+293,2005-08-01,11,60.89,10,46.9,High Value,High Value,True,2,High Value
+294,2005-08-01,13,57.87,10,47.9,High Value,Low Value,False,2,High Value
+295,2005-08-01,9,36.91,18,87.82,Low Value,Low Value,True,0,Low Value
+295,2006-02-01,1,0.99,9,36.91,Low Value,Low Value,True,0,Low Value
+296,2005-08-01,10,45.9,12,54.88,High Value,High Value,True,0,Low Value
+296,2006-02-01,1,2.99,10,45.9,Low Value,Low Value,True,0,Low Value
+297,2005-08-01,13,50.87,13,48.87,High Value,High Value,True,2,High Value
+298,2005-08-01,11,45.89,10,32.9,High Value,High Value,True,2,High Value
+299,2005-08-01,10,39.9,11,44.89,High Value,High Value,True,0,Low Value
+300,2005-08-01,11,58.89,14,59.86,High Value,High Value,True,2,High Value
+300,2006-02-01,1,4.99,11,58.89,Low Value,Low Value,True,0,Low Value
+301,2005-08-01,5,22.95,10,48.9,Low Value,Low Value,True,0,Low Value
+302,2005-08-01,11,45.89,15,67.85,High Value,High Value,True,0,Low Value
+303,2005-08-01,10,33.9,9,36.91,Loyal,Low Value,False,0,Low Value
+304,2005-08-01,7,26.93,12,52.88,Low Value,Low Value,True,0,Low Value
+305,2005-08-01,10,42.9,10,44.9,High Value,Low Value,False,0,Low Value
+306,2005-08-01,14,65.86,14,53.86,High Value,High Value,True,2,High Value
+307,2005-08-01,7,29.93,13,62.87,Low Value,Low Value,True,0,Low Value
+308,2005-08-01,13,53.87,6,27.94,High Value,Low Value,False,2,High Value
+309,2005-08-01,9,36.91,16,76.84,Low Value,Low Value,True,0,Low Value
+310,2005-08-01,5,26.95,8,41.92,Low Value,Low Value,True,0,Low Value
+311,2005-08-01,7,34.93,8,45.92,Low Value,Low Value,True,0,Low Value
+312,2005-08-01,9,32.91,11,48.89,Low Value,Low Value,True,0,Low Value
+313,2005-08-01,9,38.91,7,24.93,Big Spender,High Value,False,1,Loyal
+314,2005-08-01,11,45.89,18,67.82,High Value,High Value,True,0,Low Value
+315,2005-08-01,5,16.95,8,47.92,Low Value,Low Value,True,0,Low Value
+315,2006-02-01,1,2.99,5,16.95,Low Value,Low Value,True,1,Loyal
+316,2005-08-01,7,24.93,12,55.88,Low Value,High Value,False,0,Low Value
+317,2005-08-01,11,44.89,12,50.88,High Value,Low Value,False,0,Low Value
+317,2006-02-01,1,0.99,11,44.89,Low Value,High Value,False,0,Low Value
+318,2005-08-01,1,2.99,6,24.94,Low Value,Big Spender,False,0,Low Value
+319,2005-08-01,9,40.91,12,52.88,Big Spender,Low Value,False,0,Low Value
+320,2005-08-01,4,7.96,11,39.89,Low Value,Low Value,True,0,Low Value
+321,2005-08-01,7,42.93,10,50.9,Big Spender,Big Spender,True,0,Low Value
+322,2005-08-01,7,35.93,12,45.88,Low Value,High Value,False,0,Low Value
+323,2005-08-01,10,32.9,15,58.85,Loyal,Low Value,False,0,Low Value
+324,2005-08-01,9,41.91,12,50.88,Big Spender,Low Value,False,0,Low Value
+324,2006-02-01,1,2.99,9,41.91,Low Value,Low Value,True,0,Low Value
+325,2005-08-01,8,30.92,10,41.9,Low Value,Low Value,True,0,Low Value
+326,2005-08-01,6,17.94,12,46.88,Low Value,High Value,False,0,Low Value
+327,2005-08-01,13,58.87,5,12.95,High Value,Low Value,False,2,High Value
+327,2006-02-01,1,2.99,13,58.87,Low Value,High Value,False,0,Low Value
+328,2005-08-01,11,40.89,6,24.94,High Value,Big Spender,False,1,Loyal
+329,2005-08-01,10,45.9,13,52.87,High Value,High Value,True,0,Low Value
+330,2005-08-01,5,15.95,12,41.88,Low Value,Low Value,True,0,Low Value
+330,2006-02-01,1,2.99,5,15.95,Low Value,Low Value,True,1,Loyal
+331,2005-08-01,10,41.9,12,63.88,High Value,High Value,True,0,Low Value
+332,2005-08-01,9,28.91,17,78.83,Low Value,Low Value,True,0,Low Value
+333,2005-08-01,9,37.91,13,51.87,Low Value,Low Value,True,0,Low Value
+334,2005-08-01,13,53.87,11,53.89,High Value,High Value,True,2,High Value
+334,2006-02-01,1,0.99,13,53.87,Low Value,Low Value,True,0,Low Value
+335,2005-08-01,6,16.94,15,55.85,Low Value,Low Value,True,0,Low Value
+335,2006-02-01,1,0.99,6,16.94,Low Value,Low Value,True,1,Loyal
+336,2005-08-01,9,39.91,12,52.88,Big Spender,Low Value,False,0,Low Value
+336,2006-02-01,1,0.99,9,39.91,Low Value,Low Value,True,0,Low Value
+337,2005-08-01,11,47.89,12,62.88,High Value,High Value,True,0,Low Value
+337,2006-02-01,1,0.99,11,47.89,Low Value,Low Value,True,0,Low Value
+338,2005-08-01,10,37.9,10,40.9,Loyal,Loyal,True,0,Low Value
+339,2005-08-01,11,42.89,13,52.87,High Value,High Value,True,0,Low Value
+340,2005-08-01,14,52.86,9,30.91,High Value,Low Value,False,2,High Value
+341,2005-07-01,7,29.93,6,34.94,Low Value,Low Value,True,0,Low Value
+341,2005-08-01,9,38.91,7,29.93,Big Spender,Low Value,False,1,Loyal
+342,2005-07-01,12,45.88,3,14.97,High Value,High Value,True,1,Loyal
+342,2005-08-01,17,69.83,12,45.88,High Value,High Value,True,2,High Value
+343,2005-07-01,9,54.91,7,30.93,Big Spender,Low Value,False,2,High Value
+343,2005-08-01,7,20.93,9,54.91,Low Value,Low Value,True,0,Low Value
+344,2005-07-01,6,28.94,3,9.97,Low Value,High Value,False,1,Loyal
+344,2005-08-01,7,25.93,6,28.94,Low Value,Low Value,True,1,Loyal
+345,2005-07-01,10,49.9,4,11.96,High Value,High Value,True,1,Loyal
+345,2005-08-01,7,42.93,10,49.9,Big Spender,Low Value,False,0,Low Value
+346,2005-07-01,15,83.85,3,11.97,High Value,High Value,True,2,High Value
+346,2005-08-01,12,49.88,15,83.85,High Value,High Value,True,0,Low Value
+347,2005-07-01,17,65.83,5,31.95,High Value,High Value,True,2,High Value
+347,2005-08-01,8,44.92,17,65.83,Big Spender,Big Spender,True,0,Low Value
+348,2005-07-01,16,70.84,3,12.97,High Value,High Value,True,2,High Value
+348,2005-08-01,15,60.85,16,70.84,High Value,Big Spender,False,2,High Value
+349,2005-07-01,12,45.88,4,19.96,High Value,High Value,True,1,Loyal
+349,2005-08-01,11,64.89,12,45.88,High Value,High Value,True,2,High Value
+349,2006-02-01,1,2.99,11,64.89,Low Value,Low Value,True,0,Low Value
+350,2005-07-01,8,24.92,4,8.96,Low Value,Low Value,True,1,Loyal
+350,2005-08-01,9,29.91,8,24.92,Low Value,Low Value,True,1,Loyal
+351,2005-07-01,13,50.87,3,9.97,High Value,High Value,True,1,Loyal
+351,2005-08-01,7,26.93,13,50.87,Low Value,High Value,False,0,Low Value
+352,2005-07-01,9,43.91,5,20.95,Big Spender,High Value,False,1,Loyal
+352,2005-08-01,7,28.93,9,43.91,Low Value,Low Value,True,0,Low Value
+352,2006-02-01,1,2.99,7,28.93,Low Value,Low Value,True,0,Low Value
+353,2005-07-01,5,18.95,3,17.97,Low Value,High Value,False,1,Loyal
+353,2005-08-01,9,28.91,5,18.95,Low Value,Low Value,True,1,Loyal
+354,2005-07-01,19,67.81,4,15.96,High Value,High Value,True,2,High Value
+354,2005-08-01,8,33.92,19,67.81,Low Value,Low Value,True,0,Low Value
+354,2006-02-01,2,7.98,8,33.92,Low Value,Low Value,True,0,Low Value
+355,2005-07-01,11,52.89,2,3.98,High Value,High Value,True,1,Loyal
+355,2005-08-01,5,10.95,11,52.89,Low Value,High Value,False,0,Low Value
+355,2006-02-01,1,0.99,5,10.95,Low Value,High Value,False,1,Loyal
+356,2005-07-01,13,50.87,3,8.97,High Value,High Value,True,1,Loyal
+356,2005-08-01,13,56.87,13,50.87,High Value,High Value,True,2,High Value
+357,2005-07-01,12,42.88,4,16.96,High Value,High Value,True,1,Loyal
+357,2005-08-01,7,20.93,12,42.88,Low Value,Low Value,True,0,Low Value
+358,2005-07-01,7,19.93,6,18.94,Low Value,Low Value,True,1,Loyal
+358,2005-08-01,7,36.93,7,19.93,Low Value,Low Value,True,1,Loyal
+359,2005-07-01,9,39.91,4,12.96,Big Spender,High Value,False,1,Loyal
+359,2005-08-01,8,27.92,9,39.91,Low Value,Low Value,True,0,Low Value
+359,2006-02-01,1,4.99,8,27.92,Low Value,Low Value,True,0,Low Value
+360,2005-07-01,17,69.83,4,18.96,High Value,High Value,True,2,High Value
+360,2005-08-01,11,55.89,17,69.83,High Value,High Value,True,0,Low Value
+361,2005-07-01,10,29.9,4,12.96,Loyal,High Value,False,1,Loyal
+361,2005-08-01,13,42.87,10,29.9,High Value,High Value,True,1,Loyal
+361,2006-02-01,2,3.98,13,42.87,Low Value,High Value,False,0,Low Value
+362,2005-07-01,15,61.85,5,14.95,High Value,High Value,True,2,High Value
+362,2005-08-01,11,63.89,15,61.85,High Value,Low Value,False,2,High Value
+363,2005-07-01,15,69.85,5,22.95,High Value,High Value,True,2,High Value
+363,2005-08-01,8,46.92,15,69.85,Big Spender,Big Spender,True,0,Low Value
+364,2005-07-01,8,35.92,5,19.95,Low Value,Low Value,True,1,Loyal
+364,2005-08-01,9,33.91,8,35.92,Low Value,High Value,False,0,Low Value
+365,2005-07-01,10,44.9,5,17.95,High Value,Low Value,False,1,Loyal
+365,2005-08-01,6,29.94,10,44.9,Low Value,Low Value,True,0,Low Value
+366,2005-07-01,19,82.81,2,2.98,High Value,High Value,True,2,High Value
+366,2005-08-01,14,54.86,19,82.81,High Value,High Value,True,0,Low Value
+366,2006-02-01,1,4.99,14,54.86,Low Value,High Value,False,0,Low Value
+367,2005-07-01,11,46.89,1,0.99,High Value,High Value,True,1,Loyal
+367,2005-08-01,8,49.92,11,46.89,Big Spender,Big Spender,True,2,High Value
+368,2005-07-01,12,51.88,6,30.94,High Value,High Value,True,2,High Value
+368,2005-08-01,13,56.87,12,51.88,High Value,High Value,True,2,High Value
+369,2005-07-01,12,45.88,1,0.99,High Value,High Value,True,1,Loyal
+369,2005-08-01,7,21.93,12,45.88,Low Value,High Value,False,0,Low Value
+369,2006-02-01,1,0.99,7,21.93,Low Value,Low Value,True,1,Loyal
+370,2005-07-01,8,27.92,1,6.99,Low Value,Low Value,True,1,Loyal
+370,2005-08-01,10,35.9,8,27.92,Loyal,Low Value,False,1,Loyal
+371,2005-07-01,12,46.88,7,23.93,High Value,High Value,True,1,Loyal
+371,2005-08-01,10,52.9,12,46.88,High Value,High Value,True,2,High Value
+372,2005-07-01,16,77.84,3,11.97,High Value,High Value,True,2,High Value
+372,2005-08-01,13,62.87,16,77.84,High Value,High Value,True,2,High Value
+373,2005-07-01,16,68.84,2,9.98,High Value,High Value,True,2,High Value
+373,2005-08-01,15,76.85,16,68.84,High Value,Low Value,False,2,High Value
+373,2006-02-01,1,0.99,15,76.85,Low Value,Big Spender,False,0,Low Value
+374,2005-07-01,10,38.9,4,11.96,High Value,High Value,True,1,Loyal
+374,2005-08-01,10,44.9,10,38.9,High Value,Low Value,False,2,High Value
+374,2006-02-01,1,2.99,10,44.9,Low Value,Low Value,True,0,Low Value
+375,2005-07-01,5,22.95,3,13.97,Low Value,High Value,False,1,Loyal
+375,2005-08-01,12,51.88,5,22.95,High Value,High Value,True,2,High Value
+376,2005-07-01,15,69.85,2,1.98,High Value,High Value,True,2,High Value
+376,2005-08-01,10,37.9,15,69.85,Loyal,Big Spender,False,0,Low Value
+377,2005-07-01,11,41.89,5,14.95,High Value,High Value,True,1,Loyal
+377,2005-08-01,10,36.9,11,41.89,Loyal,High Value,False,0,Low Value
+378,2005-07-01,8,20.92,4,23.96,Low Value,High Value,False,1,Loyal
+378,2005-08-01,6,25.94,8,20.92,Low Value,Low Value,True,1,Loyal
+379,2005-07-01,6,30.94,3,17.97,Low Value,High Value,False,1,Loyal
+379,2005-08-01,12,47.88,6,30.94,High Value,High Value,True,2,High Value
+380,2005-07-01,14,58.86,8,27.92,High Value,Low Value,False,2,High Value
+380,2005-08-01,13,45.87,14,58.86,High Value,High Value,True,0,Low Value
+381,2005-07-01,14,37.86,5,16.95,Loyal,Low Value,False,1,Loyal
+381,2005-08-01,13,44.87,14,37.86,High Value,High Value,True,2,High Value
+382,2005-07-01,10,39.9,5,15.95,High Value,Low Value,False,1,Loyal
+382,2005-08-01,7,29.93,10,39.9,Low Value,Low Value,True,0,Low Value
+383,2005-07-01,9,26.91,6,27.94,Low Value,Low Value,True,1,Loyal
+383,2005-08-01,10,38.9,9,26.91,High Value,High Value,True,1,Loyal
+384,2005-07-01,8,18.92,7,34.93,Low Value,Low Value,True,0,Low Value
+384,2005-08-01,6,23.94,8,18.92,Low Value,Low Value,True,1,Loyal
+385,2005-07-01,11,44.89,3,4.97,High Value,High Value,True,1,Loyal
+385,2005-08-01,10,43.9,11,44.89,High Value,High Value,True,2,High Value
+386,2005-07-01,13,54.87,5,16.95,High Value,Low Value,False,2,High Value
+386,2005-08-01,10,37.9,13,54.87,Loyal,Loyal,True,0,Low Value
+387,2005-07-01,5,21.95,6,14.94,Low Value,Low Value,True,1,Loyal
+387,2005-08-01,11,42.89,5,21.95,High Value,Low Value,False,1,Loyal
+388,2005-07-01,11,35.89,5,26.95,Loyal,Loyal,True,1,Loyal
+388,2005-08-01,11,50.89,11,35.89,High Value,High Value,True,2,High Value
+388,2006-02-01,1,0.99,11,50.89,Low Value,High Value,False,0,Low Value
+389,2005-07-01,11,50.89,3,13.97,High Value,High Value,True,1,Loyal
+389,2005-08-01,11,54.89,11,50.89,High Value,High Value,True,2,High Value
+390,2005-07-01,14,56.86,5,25.95,High Value,Low Value,False,2,High Value
+390,2005-08-01,12,59.88,14,56.86,High Value,Low Value,False,2,High Value
+391,2005-07-01,11,37.89,5,10.95,Loyal,High Value,False,1,Loyal
+391,2005-08-01,9,30.91,11,37.89,Low Value,Low Value,True,0,Low Value
+392,2005-07-01,8,23.92,4,17.96,Low Value,Low Value,True,1,Loyal
+392,2005-08-01,11,49.89,8,23.92,High Value,Low Value,False,2,High Value
+393,2005-07-01,13,60.87,5,19.95,High Value,Low Value,False,2,High Value
+393,2005-08-01,11,34.89,13,60.87,Loyal,High Value,False,0,Low Value
+394,2005-07-01,10,38.9,1,4.99,High Value,High Value,True,1,Loyal
+394,2005-08-01,8,28.92,10,38.9,Low Value,Low Value,True,0,Low Value
+394,2006-02-01,1,4.99,8,28.92,Low Value,Low Value,True,0,Low Value
+395,2005-07-01,7,24.93,6,15.94,Low Value,Low Value,True,1,Loyal
+395,2005-08-01,6,16.94,7,24.93,Low Value,High Value,False,1,Loyal
+396,2005-07-01,12,39.88,3,13.97,High Value,High Value,True,1,Loyal
+396,2005-08-01,11,51.89,12,39.88,High Value,Low Value,False,2,High Value
+397,2005-07-01,13,50.87,2,7.98,High Value,High Value,True,1,Loyal
+397,2005-08-01,13,45.87,13,50.87,High Value,High Value,True,0,Low Value
+398,2005-07-01,7,33.93,3,19.97,Low Value,High Value,False,1,Loyal
+398,2005-08-01,5,19.95,7,33.93,Low Value,Low Value,True,0,Low Value
+399,2005-07-01,8,30.92,2,8.98,Low Value,High Value,False,1,Loyal
+399,2005-08-01,8,33.92,8,30.92,Low Value,Low Value,True,1,Loyal
+400,2005-07-01,10,51.9,3,11.97,High Value,High Value,True,1,Loyal
+400,2005-08-01,11,41.89,10,51.9,High Value,High Value,True,0,Low Value
+401,2005-08-01,9,25.91,9,35.91,Low Value,Low Value,True,0,Low Value
+402,2005-07-01,12,52.88,3,12.97,High Value,High Value,True,1,Loyal
+402,2005-08-01,4,11.96,12,52.88,Low Value,Low Value,True,0,Low Value
+403,2005-07-01,12,61.88,6,35.94,High Value,High Value,True,2,High Value
+403,2005-08-01,15,64.85,12,61.88,High Value,High Value,True,2,High Value
+404,2005-07-01,14,59.86,4,15.96,High Value,High Value,True,2,High Value
+404,2005-08-01,11,57.89,14,59.86,High Value,High Value,True,2,High Value
+405,2005-07-01,11,29.89,6,26.94,Loyal,High Value,False,1,Loyal
+405,2005-08-01,12,43.88,11,29.89,High Value,High Value,True,1,Loyal
+405,2006-02-01,1,0.99,12,43.88,Low Value,High Value,False,0,Low Value
+406,2005-07-01,18,68.82,7,26.93,High Value,High Value,True,2,High Value
+406,2005-08-01,6,25.94,18,68.82,Low Value,High Value,False,0,Low Value
+407,2005-07-01,11,49.89,2,3.98,High Value,High Value,True,1,Loyal
+407,2005-08-01,13,50.87,11,49.89,High Value,Low Value,False,2,High Value
+408,2005-07-01,12,45.88,3,10.97,High Value,Low Value,False,1,Loyal
+408,2005-08-01,12,46.88,12,45.88,High Value,High Value,True,2,High Value
+409,2005-07-01,15,58.85,2,14.98,High Value,High Value,True,2,High Value
+409,2005-08-01,5,23.95,15,58.85,Low Value,Low Value,True,0,Low Value
+410,2005-07-01,14,54.86,6,22.94,High Value,High Value,True,2,High Value
+410,2005-08-01,17,86.83,14,54.86,High Value,High Value,True,2,High Value
+410,2006-02-01,1,2.99,17,86.83,Low Value,Low Value,True,0,Low Value
+411,2005-07-01,12,32.88,3,4.97,Loyal,High Value,False,1,Loyal
+411,2005-08-01,8,30.92,12,32.88,Low Value,Low Value,True,1,Loyal
+411,2006-02-01,1,4.99,8,30.92,Low Value,Low Value,True,0,Low Value
+412,2005-07-01,7,26.93,1,2.99,Low Value,High Value,False,1,Loyal
+412,2005-08-01,8,43.92,7,26.93,Big Spender,High Value,False,1,Loyal
+412,2006-02-01,1,0.99,8,43.92,Low Value,Low Value,True,0,Low Value
+413,2005-07-01,6,20.94,2,10.98,Low Value,High Value,False,1,Loyal
+413,2005-08-01,11,33.89,6,20.94,Loyal,High Value,False,1,Loyal
+414,2005-07-01,10,40.9,3,20.97,High Value,High Value,True,1,Loyal
+414,2005-08-01,10,34.9,10,40.9,Loyal,Loyal,True,0,Low Value
+415,2005-07-01,11,40.89,2,7.98,High Value,High Value,True,1,Loyal
+415,2005-08-01,9,39.91,11,40.89,Big Spender,High Value,False,0,Low Value
+416,2005-07-01,10,36.9,5,12.95,Loyal,Low Value,False,1,Loyal
+416,2005-08-01,13,63.87,10,36.9,High Value,High Value,True,2,High Value
+417,2005-07-01,7,35.93,1,3.99,Low Value,High Value,False,1,Loyal
+417,2005-08-01,13,48.87,7,35.93,High Value,Low Value,False,2,High Value
+417,2006-02-01,1,2.99,13,48.87,Low Value,High Value,False,0,Low Value
+418,2005-07-01,10,45.9,3,8.97,High Value,High Value,True,1,Loyal
+418,2005-08-01,17,52.83,10,45.9,High Value,Low Value,False,2,High Value
+419,2005-07-01,13,39.87,1,2.99,High Value,High Value,True,1,Loyal
+419,2005-08-01,10,43.9,13,39.87,High Value,High Value,True,2,High Value
+420,2005-07-01,11,39.89,3,5.97,High Value,Low Value,False,1,Loyal
+420,2005-08-01,6,28.94,11,39.89,Low Value,Low Value,True,0,Low Value
+421,2005-07-01,12,57.88,3,12.97,High Value,High Value,True,2,High Value
+421,2005-08-01,9,45.91,12,57.88,Big Spender,Big Spender,True,0,Low Value
+421,2006-02-01,1,0.99,9,45.91,Low Value,Low Value,True,0,Low Value
+422,2005-07-01,7,21.93,4,14.96,Low Value,High Value,False,1,Loyal
+422,2005-08-01,13,56.87,7,21.93,High Value,Low Value,False,2,High Value
+422,2006-02-01,1,2.99,13,56.87,Low Value,Low Value,True,0,Low Value
+423,2005-07-01,13,58.87,5,27.95,High Value,High Value,True,2,High Value
+423,2005-08-01,8,33.92,13,58.87,Low Value,High Value,False,0,Low Value
+424,2005-07-01,16,58.84,3,12.97,High Value,High Value,True,2,High Value
+424,2005-08-01,9,36.91,16,58.84,Low Value,Low Value,True,0,Low Value
+424,2006-02-01,1,0.99,9,36.91,Low Value,Low Value,True,0,Low Value
+425,2005-07-01,17,67.83,1,6.99,High Value,Low Value,False,2,High Value
+425,2005-08-01,7,23.93,17,67.83,Low Value,Low Value,True,0,Low Value
+426,2005-07-01,11,65.89,5,19.95,High Value,Low Value,False,2,High Value
+426,2005-08-01,10,39.9,11,65.89,High Value,High Value,True,0,Low Value
+427,2005-07-01,10,49.9,5,18.95,High Value,Low Value,False,1,Loyal
+427,2005-08-01,8,38.92,10,49.9,Big Spender,Low Value,False,0,Low Value
+428,2005-07-01,11,49.89,5,14.95,High Value,High Value,True,1,Loyal
+428,2005-08-01,3,8.97,11,49.89,Low Value,Low Value,True,0,Low Value
+429,2005-07-01,9,45.91,4,19.96,Big Spender,High Value,False,1,Loyal
+429,2005-08-01,3,12.97,9,45.91,Low Value,Low Value,True,0,Low Value
+430,2005-07-01,7,33.93,6,15.94,Low Value,Low Value,True,1,Loyal
+430,2005-08-01,7,21.93,7,33.93,Low Value,Low Value,True,0,Low Value
+431,2005-07-01,5,17.95,7,35.93,Low Value,Low Value,True,0,Low Value
+431,2005-08-01,9,35.91,5,17.95,Low Value,Low Value,True,1,Loyal
+431,2006-02-01,1,2.99,9,35.91,Low Value,Low Value,True,0,Low Value
+432,2005-07-01,12,56.88,3,13.97,High Value,High Value,True,2,High Value
+432,2005-08-01,5,22.95,12,56.88,Low Value,Low Value,True,0,Low Value
+433,2005-08-01,9,47.91,14,65.86,Big Spender,Low Value,False,0,Low Value
+434,2005-07-01,9,40.91,7,28.93,Big Spender,Low Value,False,1,Loyal
+434,2005-08-01,10,52.9,9,40.91,High Value,Low Value,False,2,High Value
+435,2005-07-01,10,43.9,2,1.98,High Value,High Value,True,1,Loyal
+435,2005-08-01,11,32.89,10,43.9,Loyal,High Value,False,0,Low Value
+436,2005-07-01,12,52.88,1,9.99,High Value,High Value,True,1,Loyal
+436,2005-08-01,14,63.86,12,52.88,High Value,Low Value,False,2,High Value
+437,2005-07-01,10,44.9,3,11.97,High Value,High Value,True,1,Loyal
+437,2005-08-01,7,28.93,10,44.9,Low Value,Low Value,True,0,Low Value
+438,2005-07-01,14,54.86,6,17.94,High Value,High Value,True,2,High Value
+438,2005-08-01,9,47.91,14,54.86,Big Spender,High Value,False,0,Low Value
+438,2006-02-01,1,0.99,9,47.91,Low Value,Low Value,True,0,Low Value
+439,2005-07-01,12,45.88,6,23.94,High Value,High Value,True,1,Loyal
+439,2005-08-01,15,67.85,12,45.88,High Value,High Value,True,2,High Value
+440,2005-08-01,8,30.92,12,47.88,Low Value,Low Value,True,0,Low Value
+440,2006-02-01,1,4.99,8,30.92,Low Value,Low Value,True,0,Low Value
+441,2005-07-01,17,66.83,2,9.98,High Value,High Value,True,2,High Value
+441,2005-08-01,7,25.93,17,66.83,Low Value,Big Spender,False,0,Low Value
+441,2006-02-01,1,4.99,7,25.93,Low Value,Low Value,True,0,Low Value
+442,2005-07-01,16,60.84,4,18.96,High Value,High Value,True,2,High Value
+442,2005-08-01,9,24.91,16,60.84,Low Value,Low Value,True,0,Low Value
+443,2005-07-01,10,54.9,1,2.99,High Value,High Value,True,1,Loyal
+443,2005-08-01,10,35.9,10,54.9,Loyal,Low Value,False,0,Low Value
+444,2005-07-01,8,27.92,6,25.94,Low Value,Low Value,True,1,Loyal
+444,2005-08-01,14,51.86,8,27.92,High Value,Low Value,False,2,High Value
+445,2005-08-01,14,66.86,10,29.9,High Value,High Value,True,2,High Value
+446,2005-07-01,17,71.83,6,20.94,High Value,High Value,True,2,High Value
+446,2005-08-01,5,16.95,17,71.83,Low Value,Low Value,True,0,Low Value
+447,2005-07-01,11,50.89,4,13.96,High Value,High Value,True,1,Loyal
+447,2005-08-01,12,44.88,11,50.89,High Value,High Value,True,0,Low Value
+448,2005-07-01,10,43.9,5,24.95,High Value,High Value,True,1,Loyal
+448,2005-08-01,10,54.9,10,43.9,High Value,High Value,True,2,High Value
+448,2006-02-01,2,3.98,10,54.9,Low Value,Low Value,True,0,Low Value
+449,2005-07-01,8,36.92,3,8.97,Low Value,High Value,False,1,Loyal
+449,2005-08-01,6,34.94,8,36.92,Low Value,Low Value,True,0,Low Value
+450,2005-07-01,7,26.93,7,22.93,Low Value,Low Value,True,1,Loyal
+450,2005-08-01,10,34.9,7,26.93,Loyal,High Value,False,1,Loyal
+450,2006-02-01,1,0.99,10,34.9,Low Value,High Value,False,0,Low Value
+451,2005-07-01,7,37.93,7,22.93,Low Value,Low Value,True,1,Loyal
+451,2005-08-01,16,60.84,7,37.93,High Value,High Value,True,2,High Value
+452,2005-07-01,13,45.87,7,22.93,High Value,Low Value,False,1,Loyal
+452,2005-08-01,8,25.92,13,45.87,Low Value,Low Value,True,0,Low Value
+452,2006-02-01,1,4.99,8,25.92,Low Value,Low Value,True,0,Low Value
+453,2005-07-01,10,46.9,3,18.97,High Value,High Value,True,1,Loyal
+453,2005-08-01,10,45.9,10,46.9,High Value,High Value,True,2,High Value
+454,2005-07-01,11,45.89,10,52.9,High Value,Low Value,False,0,Low Value
+454,2005-08-01,11,44.89,11,45.89,High Value,Low Value,False,2,High Value
+455,2005-07-01,9,45.91,4,7.96,Big Spender,Big Spender,True,1,Loyal
+455,2005-08-01,9,31.91,9,45.91,Low Value,Low Value,True,0,Low Value
+456,2005-07-01,7,24.93,7,25.93,Low Value,Low Value,True,1,Loyal
+456,2005-08-01,10,44.9,7,24.93,High Value,High Value,True,1,Loyal
+457,2005-07-01,7,27.93,9,30.91,Low Value,Low Value,True,1,Loyal
+457,2005-08-01,9,43.91,7,27.93,Big Spender,Low Value,False,1,Loyal
+457,2006-02-01,2,3.98,9,43.91,Low Value,Low Value,True,0,Low Value
+458,2005-07-01,9,31.91,2,6.98,Low Value,High Value,False,1,Loyal
+458,2005-08-01,8,27.92,9,31.91,Low Value,Low Value,True,1,Loyal
+459,2005-07-01,18,89.82,7,25.93,High Value,Low Value,False,2,High Value
+459,2005-08-01,12,67.88,18,89.82,High Value,High Value,True,2,High Value
+460,2005-07-01,8,41.92,1,0.99,Big Spender,High Value,False,1,Loyal
+460,2005-08-01,12,54.88,8,41.92,High Value,Low Value,False,2,High Value
+461,2005-07-01,11,26.89,2,10.98,Loyal,High Value,False,1,Loyal
+461,2005-08-01,14,52.86,11,26.89,High Value,Low Value,False,2,High Value
+462,2005-07-01,16,74.84,3,20.97,High Value,High Value,True,2,High Value
+462,2005-08-01,12,56.88,16,74.84,High Value,Low Value,False,0,Low Value
+463,2005-07-01,10,30.9,4,15.96,Loyal,High Value,False,1,Loyal
+463,2005-08-01,10,42.9,10,30.9,High Value,High Value,True,1,Loyal
+464,2005-07-01,6,32.94,2,7.98,Low Value,High Value,False,1,Loyal
+464,2005-08-01,6,26.94,6,32.94,Low Value,Low Value,True,1,Loyal
+465,2005-07-01,3,7.97,4,17.96,Low Value,Low Value,True,1,Loyal
+465,2005-08-01,9,42.91,3,7.97,Big Spender,Big Spender,True,1,Loyal
+466,2005-07-01,7,23.93,5,28.95,Low Value,Low Value,True,1,Loyal
+466,2005-08-01,10,48.9,7,23.93,High Value,High Value,True,1,Loyal
+467,2005-07-01,13,66.87,4,30.96,High Value,High Value,True,2,High Value
+467,2005-08-01,11,36.89,13,66.87,Loyal,Loyal,True,0,Low Value
+468,2005-07-01,14,58.86,6,23.94,High Value,High Value,True,2,High Value
+468,2005-08-01,14,71.86,14,58.86,High Value,High Value,True,2,High Value
+469,2005-07-01,18,80.82,2,10.98,High Value,High Value,True,2,High Value
+469,2005-08-01,15,66.85,18,80.82,High Value,High Value,True,2,High Value
+470,2005-07-01,17,96.83,3,9.97,High Value,High Value,True,2,High Value
+470,2005-08-01,11,50.89,17,96.83,High Value,High Value,True,0,Low Value
+471,2005-07-01,9,29.91,5,20.95,Low Value,High Value,False,1,Loyal
+471,2005-08-01,12,55.88,9,29.91,High Value,High Value,True,2,High Value
+472,2005-07-01,9,48.91,6,24.94,Big Spender,Big Spender,True,1,Loyal
+472,2005-08-01,10,52.9,9,48.91,High Value,Low Value,False,2,High Value
+472,2006-02-01,1,4.99,10,52.9,Low Value,Low Value,True,0,Low Value
+473,2005-07-01,13,57.87,4,13.96,High Value,High Value,True,2,High Value
+473,2005-08-01,14,50.86,13,57.87,High Value,Low Value,False,2,High Value
+474,2005-07-01,10,31.9,2,16.98,Loyal,Loyal,True,1,Loyal
+474,2005-08-01,12,42.88,10,31.9,High Value,High Value,True,1,Loyal
+474,2006-02-01,1,0.99,12,42.88,Low Value,Low Value,True,0,Low Value
+475,2005-08-01,7,25.93,15,71.85,Low Value,Low Value,True,0,Low Value
+476,2005-07-01,9,39.91,4,12.96,Big Spender,High Value,False,1,Loyal
+476,2005-08-01,6,33.94,9,39.91,Low Value,Low Value,True,0,Low Value
+476,2006-02-01,1,0.99,6,33.94,Low Value,Low Value,True,0,Low Value
+477,2005-07-01,10,58.9,4,25.96,High Value,High Value,True,2,High Value
+477,2005-08-01,7,21.93,10,58.9,Low Value,Low Value,True,0,Low Value
+478,2005-07-01,7,28.93,6,31.94,Low Value,High Value,False,1,Loyal
+478,2005-08-01,6,25.94,7,28.93,Low Value,Low Value,True,1,Loyal
+479,2005-07-01,15,79.85,6,23.94,High Value,High Value,True,2,High Value
+479,2005-08-01,7,29.93,15,79.85,Low Value,Low Value,True,0,Low Value
+479,2006-02-01,1,0.99,7,29.93,Low Value,Low Value,True,0,Low Value
+480,2005-07-01,8,43.92,2,1.98,Big Spender,High Value,False,1,Loyal
+480,2005-08-01,9,37.91,8,43.92,Low Value,Low Value,True,0,Low Value
+481,2005-07-01,13,57.87,4,13.96,High Value,High Value,True,2,High Value
+481,2005-08-01,11,37.89,13,57.87,Loyal,Low Value,False,0,Low Value
+482,2005-07-01,12,69.88,2,3.98,High Value,High Value,True,2,High Value
+482,2005-08-01,12,51.88,12,69.88,High Value,High Value,True,0,Low Value
+483,2005-07-01,9,48.91,3,14.97,Big Spender,High Value,False,1,Loyal
+483,2005-08-01,5,17.95,9,48.91,Low Value,Low Value,True,0,Low Value
+484,2005-07-01,15,77.85,4,18.96,High Value,High Value,True,2,High Value
+484,2005-08-01,8,31.92,15,77.85,Low Value,Low Value,True,0,Low Value
+485,2005-07-01,18,63.82,2,11.98,High Value,High Value,True,2,High Value
+485,2005-08-01,8,36.92,18,63.82,Low Value,Low Value,True,0,Low Value
+486,2005-07-01,12,58.88,4,16.96,High Value,High Value,True,2,High Value
+486,2005-08-01,7,24.93,12,58.88,Low Value,Low Value,True,0,Low Value
+487,2005-07-01,14,46.86,1,3.99,High Value,High Value,True,1,Loyal
+487,2005-08-01,11,68.89,14,46.86,High Value,Low Value,False,2,High Value
+488,2005-07-01,11,50.89,2,9.98,High Value,High Value,True,1,Loyal
+488,2005-08-01,9,34.91,11,50.89,Low Value,High Value,False,0,Low Value
+489,2005-07-01,5,17.95,4,17.96,Low Value,Low Value,True,1,Loyal
+489,2005-08-01,10,55.9,5,17.95,High Value,Low Value,False,2,High Value
+490,2005-07-01,14,64.86,1,3.99,High Value,High Value,True,2,High Value
+490,2005-08-01,7,36.93,14,64.86,Low Value,Low Value,True,0,Low Value
+491,2005-07-01,11,60.89,7,31.93,High Value,Loyal,False,2,High Value
+491,2005-08-01,7,27.93,11,60.89,Low Value,Low Value,True,0,Low Value
+492,2005-07-01,7,26.93,4,21.96,Low Value,Low Value,True,1,Loyal
+492,2005-08-01,4,13.96,7,26.93,Low Value,High Value,False,1,Loyal
+493,2005-07-01,8,42.92,4,12.96,Big Spender,High Value,False,1,Loyal
+493,2005-08-01,9,45.91,8,42.92,Big Spender,Low Value,False,2,High Value
+493,2006-02-01,1,2.99,9,45.91,Low Value,Low Value,True,0,Low Value
+494,2005-07-01,18,80.82,1,2.99,High Value,High Value,True,2,High Value
+494,2005-08-01,11,51.89,18,80.82,High Value,High Value,True,0,Low Value
+495,2005-07-01,11,56.89,4,19.96,High Value,High Value,True,2,High Value
+495,2005-08-01,8,32.92,11,56.89,Low Value,Low Value,True,0,Low Value
+495,2006-02-01,1,0.99,8,32.92,Low Value,Low Value,True,0,Low Value
+496,2005-07-01,8,29.92,1,2.99,Low Value,High Value,False,1,Loyal
+496,2005-08-01,9,46.91,8,29.92,Big Spender,Low Value,False,2,High Value
+496,2006-02-01,1,2.99,9,46.91,Low Value,Low Value,True,0,Low Value
+497,2005-07-01,14,67.86,4,22.96,High Value,High Value,True,2,High Value
+497,2005-08-01,8,25.92,14,67.86,Low Value,High Value,False,0,Low Value
+497,2006-02-01,1,4.99,8,25.92,Low Value,Low Value,True,0,Low Value
+498,2005-07-01,15,51.85,6,19.94,High Value,Low Value,False,2,High Value
+498,2005-08-01,3,10.97,15,51.85,Low Value,Low Value,True,0,Low Value
+499,2005-07-01,12,43.88,4,14.96,High Value,High Value,True,1,Loyal
+499,2005-08-01,13,61.87,12,43.88,High Value,High Value,True,2,High Value
+500,2005-07-01,11,38.89,5,25.95,High Value,Low Value,False,1,Loyal
+500,2005-08-01,9,31.91,11,38.89,Low Value,Low Value,True,0,Low Value
+501,2005-07-01,9,36.91,2,13.98,Low Value,Low Value,True,1,Loyal
+501,2005-08-01,8,35.92,9,36.91,Low Value,Low Value,True,0,Low Value
+502,2005-07-01,15,73.85,3,9.97,High Value,High Value,True,2,High Value
+502,2005-08-01,12,46.88,15,73.85,High Value,High Value,True,0,Low Value
+503,2005-07-01,10,41.9,3,8.97,High Value,High Value,True,1,Loyal
+503,2005-08-01,15,48.85,10,41.9,High Value,Low Value,False,2,High Value
+504,2005-07-01,11,57.89,2,8.98,High Value,High Value,True,1,Loyal
+504,2005-08-01,12,50.88,11,57.89,High Value,High Value,True,2,High Value
+505,2005-07-01,6,33.94,4,24.96,Low Value,High Value,False,1,Loyal
+505,2005-08-01,8,27.92,6,33.94,Low Value,Low Value,True,0,Low Value
+505,2006-02-01,1,4.99,8,27.92,Low Value,Low Value,True,0,Low Value
+506,2005-07-01,10,46.9,5,27.95,High Value,High Value,True,1,Loyal
+506,2005-08-01,13,48.87,10,46.9,High Value,High Value,True,2,High Value
+507,2005-07-01,15,49.85,3,14.97,High Value,High Value,True,1,Loyal
+507,2005-08-01,5,24.95,15,49.85,Low Value,Low Value,True,0,Low Value
+508,2005-07-01,14,74.86,1,4.99,High Value,High Value,True,2,High Value
+508,2005-08-01,7,40.93,14,74.86,Big Spender,Big Spender,True,0,Low Value
+508,2006-02-01,1,0.99,7,40.93,Low Value,Low Value,True,0,Low Value
+509,2005-07-01,9,41.91,2,7.98,Big Spender,High Value,False,1,Loyal
+509,2005-08-01,7,36.93,9,41.91,Low Value,Low Value,True,0,Low Value
+510,2005-07-01,10,46.9,8,33.92,High Value,Low Value,False,2,High Value
+510,2005-08-01,5,21.95,10,46.9,Low Value,High Value,False,0,Low Value
+511,2005-07-01,11,35.89,4,21.96,Loyal,Low Value,False,1,Loyal
+511,2005-08-01,7,34.93,11,35.89,Low Value,High Value,False,0,Low Value
+512,2005-07-01,9,36.91,3,14.97,Low Value,High Value,False,1,Loyal
+512,2005-08-01,13,62.87,9,36.91,High Value,Low Value,False,2,High Value
+512,2006-02-01,1,0.99,13,62.87,Low Value,Low Value,True,0,Low Value
+513,2005-07-01,13,60.87,3,12.97,High Value,High Value,True,2,High Value
+513,2005-08-01,14,69.86,13,60.87,High Value,High Value,True,2,High Value
+514,2005-07-01,4,17.96,6,14.94,Low Value,Low Value,True,1,Loyal
+514,2005-08-01,11,36.89,4,17.96,Loyal,Low Value,False,1,Loyal
+515,2005-07-01,8,30.92,6,25.94,Low Value,Low Value,True,1,Loyal
+515,2005-08-01,12,53.88,8,30.92,High Value,Low Value,False,2,High Value
+516,2005-07-01,9,46.91,6,22.94,Big Spender,High Value,False,1,Loyal
+516,2005-08-01,7,16.93,9,46.91,Low Value,Low Value,True,0,Low Value
+516,2006-02-01,2,5.98,7,16.93,Low Value,Low Value,True,1,Loyal
+517,2005-07-01,12,50.88,5,22.95,High Value,High Value,True,2,High Value
+517,2005-08-01,7,26.93,12,50.88,Low Value,Low Value,True,0,Low Value
+518,2005-07-01,13,55.87,2,6.98,High Value,High Value,True,1,Loyal
+518,2005-08-01,10,45.9,13,55.87,High Value,Loyal,False,0,Low Value
+519,2005-07-01,13,51.87,3,17.97,High Value,High Value,True,1,Loyal
+519,2005-08-01,6,29.94,13,51.87,Low Value,Low Value,True,0,Low Value
+520,2005-07-01,14,60.86,3,12.97,High Value,High Value,True,2,High Value
+520,2005-08-01,14,53.86,14,60.86,High Value,High Value,True,2,High Value
+521,2005-07-01,9,31.91,2,1.98,Low Value,High Value,False,1,Loyal
+521,2005-08-01,11,41.89,9,31.91,High Value,Low Value,False,1,Loyal
+521,2006-02-01,1,4.99,11,41.89,Low Value,High Value,False,0,Low Value
+522,2005-07-01,18,96.82,4,16.96,High Value,High Value,True,2,High Value
+522,2005-08-01,10,47.9,18,96.82,High Value,High Value,True,0,Low Value
+523,2005-07-01,10,41.9,4,24.96,High Value,High Value,True,1,Loyal
+523,2005-08-01,6,20.94,10,41.9,Low Value,Low Value,True,0,Low Value
+524,2005-07-01,8,48.92,3,9.97,Big Spender,High Value,False,1,Loyal
+524,2005-08-01,6,22.94,8,48.92,Low Value,Low Value,True,0,Low Value
+525,2005-07-01,11,49.89,1,2.99,High Value,High Value,True,1,Loyal
+525,2005-08-01,5,12.95,11,49.89,Low Value,Low Value,True,0,Low Value
+525,2006-02-01,1,2.99,5,12.95,Low Value,Low Value,True,1,Loyal
+526,2005-07-01,19,86.81,9,41.91,High Value,Low Value,False,2,High Value
+526,2005-08-01,14,79.86,19,86.81,High Value,Low Value,False,2,High Value
+527,2005-07-01,9,26.91,4,7.96,Low Value,Big Spender,False,1,Loyal
+527,2005-08-01,10,43.9,9,26.91,High Value,High Value,True,1,Loyal
+527,2006-02-01,1,2.99,10,43.9,Low Value,High Value,False,0,Low Value
+528,2005-07-01,11,56.89,2,7.98,High Value,High Value,True,1,Loyal
+528,2005-08-01,7,28.93,11,56.89,Low Value,Low Value,True,0,Low Value
+529,2005-07-01,13,53.87,3,3.97,High Value,High Value,True,1,Loyal
+529,2005-08-01,12,57.88,13,53.87,High Value,Low Value,False,2,High Value
+530,2005-07-01,9,30.91,3,5.97,Low Value,Low Value,True,1,Loyal
+530,2005-08-01,9,35.91,9,30.91,Low Value,Low Value,True,1,Loyal
+530,2006-02-01,1,2.99,9,35.91,Low Value,Low Value,True,0,Low Value
+531,2005-07-01,14,64.86,1,2.99,High Value,High Value,True,2,High Value
+531,2005-08-01,8,42.92,14,64.86,Big Spender,Low Value,False,0,Low Value
+532,2005-07-01,14,69.86,2,8.98,High Value,High Value,True,2,High Value
+532,2005-08-01,14,69.86,14,69.86,High Value,High Value,True,2,High Value
+532,2006-02-01,1,0.99,14,69.86,Low Value,High Value,False,0,Low Value
+533,2005-07-01,13,58.87,6,18.94,High Value,Low Value,False,2,High Value
+533,2005-08-01,10,51.9,13,58.87,High Value,High Value,True,2,High Value
+533,2006-02-01,1,2.99,10,51.9,Low Value,High Value,False,0,Low Value
+534,2005-07-01,7,25.93,5,15.95,Low Value,Low Value,True,1,Loyal
+534,2005-08-01,9,36.91,7,25.93,Low Value,Low Value,True,1,Loyal
+534,2006-02-01,1,2.99,9,36.91,Low Value,Low Value,True,0,Low Value
+535,2005-07-01,11,48.89,2,9.98,High Value,High Value,True,1,Loyal
+535,2005-08-01,15,63.85,11,48.89,High Value,Low Value,False,2,High Value
+536,2005-07-01,12,51.88,3,10.97,High Value,Low Value,False,1,Loyal
+536,2005-08-01,8,46.92,12,51.88,Big Spender,High Value,False,0,Low Value
+537,2005-07-01,12,40.88,4,23.96,High Value,High Value,True,1,Loyal
+537,2005-08-01,7,28.93,12,40.88,Low Value,Low Value,True,0,Low Value
+537,2006-02-01,1,4.99,7,28.93,Low Value,Low Value,True,0,Low Value
+538,2005-07-01,14,51.86,4,18.96,High Value,High Value,True,1,Loyal
+538,2005-08-01,9,38.91,14,51.86,Big Spender,Low Value,False,0,Low Value
+539,2005-07-01,12,55.88,3,9.97,High Value,High Value,True,1,Loyal
+539,2005-08-01,5,18.95,12,55.88,Low Value,High Value,False,0,Low Value
+540,2005-07-01,9,39.91,5,18.95,Big Spender,Low Value,False,1,Loyal
+540,2005-08-01,10,53.9,9,39.91,High Value,Low Value,False,2,High Value
+541,2005-07-01,7,33.93,2,9.98,Low Value,High Value,False,1,Loyal
+541,2005-08-01,13,51.87,7,33.93,High Value,Low Value,False,2,High Value
+542,2005-07-01,8,47.92,2,15.98,Big Spender,High Value,False,1,Loyal
+542,2005-08-01,6,20.94,8,47.92,Low Value,Low Value,True,0,Low Value
+543,2005-07-01,8,27.92,5,21.95,Low Value,Low Value,True,1,Loyal
+543,2005-08-01,7,23.93,8,27.92,Low Value,Low Value,True,1,Loyal
+544,2005-07-01,6,29.94,4,16.96,Low Value,High Value,False,1,Loyal
+544,2005-08-01,10,45.9,6,29.94,High Value,High Value,True,2,High Value
+545,2005-07-01,9,42.91,1,2.99,Big Spender,High Value,False,1,Loyal
+545,2005-08-01,9,38.91,9,42.91,Big Spender,Low Value,False,0,Low Value
+546,2005-07-01,10,39.9,4,12.96,High Value,High Value,True,1,Loyal
+546,2005-08-01,9,37.91,10,39.9,Low Value,Low Value,True,0,Low Value
+547,2005-07-01,10,41.9,1,8.99,High Value,High Value,True,1,Loyal
+547,2005-08-01,9,36.91,10,41.9,Low Value,Low Value,True,0,Low Value
+548,2005-07-01,6,29.94,3,5.97,Low Value,Low Value,True,1,Loyal
+548,2005-08-01,6,26.94,6,29.94,Low Value,High Value,False,1,Loyal
+548,2006-02-01,1,0.99,6,26.94,Low Value,High Value,False,0,Low Value
+549,2005-07-01,9,41.91,1,2.99,Big Spender,High Value,False,1,Loyal
+549,2005-08-01,6,17.94,9,41.91,Low Value,Low Value,True,0,Low Value
+550,2005-07-01,11,44.89,6,39.94,High Value,High Value,True,2,High Value
+550,2005-08-01,13,63.87,11,44.89,High Value,High Value,True,2,High Value
+550,2006-02-01,1,2.99,13,63.87,Low Value,Low Value,True,0,Low Value
+551,2005-07-01,8,28.92,2,8.98,Low Value,High Value,False,1,Loyal
+551,2005-08-01,11,37.89,8,28.92,Loyal,Low Value,False,1,Loyal
+552,2005-07-01,9,48.91,2,5.98,Big Spender,High Value,False,1,Loyal
+552,2005-08-01,9,34.91,9,48.91,Low Value,Low Value,True,0,Low Value
+553,2005-07-01,16,68.84,3,19.97,High Value,High Value,True,2,High Value
+553,2005-08-01,4,13.96,16,68.84,Low Value,Low Value,True,0,Low Value
+554,2005-07-01,4,16.96,4,21.96,Low Value,Low Value,True,1,Loyal
+554,2005-08-01,12,56.88,4,16.96,High Value,High Value,True,2,High Value
+555,2005-07-01,6,29.94,1,1.99,Low Value,Low Value,True,1,Loyal
+555,2005-08-01,10,42.9,6,29.94,High Value,High Value,True,1,Loyal
+556,2005-07-01,7,22.93,5,25.95,Low Value,Low Value,True,1,Loyal
+556,2005-08-01,6,23.94,7,22.93,Low Value,Low Value,True,1,Loyal
+557,2005-07-01,10,26.9,3,11.97,Loyal,High Value,False,1,Loyal
+557,2005-08-01,8,19.92,10,26.9,Low Value,Low Value,True,1,Loyal
+557,2006-02-01,1,4.99,8,19.92,Low Value,Low Value,True,1,Loyal
+558,2005-07-01,15,70.85,5,27.95,High Value,High Value,True,2,High Value
+558,2005-08-01,8,36.92,15,70.85,Low Value,Low Value,True,0,Low Value
+559,2005-07-01,12,41.88,4,12.96,High Value,High Value,True,1,Loyal
+559,2005-08-01,12,55.88,12,41.88,High Value,Low Value,False,2,High Value
+560,2005-07-01,14,59.86,2,6.98,High Value,High Value,True,1,Loyal
+560,2005-08-01,11,56.89,14,59.86,High Value,High Value,True,2,High Value
+560,2006-02-01,2,5.98,11,56.89,Low Value,Low Value,True,0,Low Value
+561,2005-07-01,7,29.93,9,33.91,Low Value,Low Value,True,0,Low Value
+561,2005-08-01,8,21.92,7,29.93,Low Value,Low Value,True,1,Loyal
+561,2006-02-01,1,0.99,8,21.92,Low Value,Low Value,True,1,Loyal
+562,2005-07-01,9,38.91,4,17.96,Big Spender,Low Value,False,1,Loyal
+562,2005-08-01,9,40.91,9,38.91,Big Spender,High Value,False,2,High Value
+563,2005-07-01,16,60.84,2,5.98,High Value,High Value,True,1,Loyal
+563,2005-08-01,9,32.91,16,60.84,Low Value,Low Value,True,0,Low Value
+564,2005-07-01,9,37.91,1,2.99,Low Value,High Value,False,1,Loyal
+564,2005-08-01,12,41.88,9,37.91,High Value,High Value,True,2,High Value
+565,2005-07-01,11,34.89,3,16.97,Loyal,High Value,False,1,Loyal
+565,2005-08-01,13,66.87,11,34.89,High Value,High Value,True,2,High Value
+566,2005-07-01,18,71.82,4,16.96,High Value,High Value,True,2,High Value
+566,2005-08-01,10,41.9,18,71.82,High Value,High Value,True,0,Low Value
+567,2005-07-01,11,40.89,2,7.98,High Value,High Value,True,1,Loyal
+567,2005-08-01,7,36.93,11,40.89,Low Value,High Value,False,0,Low Value
+568,2005-07-01,8,23.92,5,17.95,Low Value,Low Value,True,1,Loyal
+568,2005-08-01,7,21.93,8,23.92,Low Value,Low Value,True,1,Loyal
+568,2006-02-01,1,2.99,7,21.93,Low Value,Low Value,True,1,Loyal
+569,2005-07-01,7,24.93,2,12.98,Low Value,Low Value,True,1,Loyal
+569,2005-08-01,18,75.82,7,24.93,High Value,High Value,True,2,High Value
+570,2005-07-01,14,44.86,7,32.93,High Value,Low Value,False,2,High Value
+570,2005-08-01,3,12.97,14,44.86,Low Value,Low Value,True,0,Low Value
+570,2006-02-01,1,0.99,3,12.97,Low Value,High Value,False,1,Loyal
+571,2005-07-01,9,48.91,6,32.94,Big Spender,Low Value,False,2,High Value
+571,2005-08-01,7,25.93,9,48.91,Low Value,Low Value,True,0,Low Value
+572,2005-07-01,11,46.89,3,12.97,High Value,High Value,True,1,Loyal
+572,2005-08-01,10,40.9,11,46.89,High Value,Big Spender,False,0,Low Value
+573,2005-07-01,15,70.85,4,20.96,High Value,Low Value,False,2,High Value
+573,2005-08-01,9,25.91,15,70.85,Low Value,Low Value,True,0,Low Value
+574,2005-07-01,15,64.85,5,15.95,High Value,Low Value,False,2,High Value
+574,2005-08-01,7,27.93,15,64.85,Low Value,Low Value,True,0,Low Value
+575,2005-07-01,9,36.91,3,10.97,Low Value,Low Value,True,1,Loyal
+575,2005-08-01,12,61.88,9,36.91,High Value,Low Value,False,2,High Value
+576,2005-07-01,15,63.85,7,33.93,High Value,Low Value,False,2,High Value
+576,2005-08-01,8,31.92,15,63.85,Low Value,Low Value,True,0,Low Value
+576,2006-02-01,2,5.98,8,31.92,Low Value,Low Value,True,0,Low Value
+577,2005-07-01,11,52.89,3,13.97,High Value,High Value,True,1,Loyal
+577,2005-08-01,12,44.88,11,52.89,High Value,High Value,True,0,Low Value
+578,2005-07-01,11,45.89,3,14.97,High Value,High Value,True,1,Loyal
+578,2005-08-01,7,34.93,11,45.89,Low Value,Low Value,True,0,Low Value
+579,2005-07-01,14,65.86,3,12.97,High Value,High Value,True,2,High Value
+579,2005-08-01,9,31.91,14,65.86,Low Value,Low Value,True,0,Low Value
+579,2006-02-01,1,0.99,9,31.91,Low Value,Low Value,True,0,Low Value
+580,2005-07-01,15,49.85,1,0.99,High Value,High Value,True,1,Loyal
+580,2005-08-01,10,47.9,15,49.85,High Value,Low Value,False,2,High Value
+581,2005-07-01,14,57.86,3,11.97,High Value,High Value,True,2,High Value
+581,2005-08-01,8,27.92,14,57.86,Low Value,Low Value,True,0,Low Value
+582,2005-07-01,10,53.9,3,11.97,High Value,High Value,True,1,Loyal
+582,2005-08-01,10,43.9,10,53.9,High Value,High Value,True,0,Low Value
+582,2006-02-01,1,2.99,10,43.9,Low Value,High Value,False,0,Low Value
+583,2005-07-01,12,68.88,6,29.94,High Value,High Value,True,2,High Value
+583,2005-08-01,5,18.95,12,68.88,Low Value,Low Value,True,0,Low Value
+584,2005-07-01,12,44.88,2,10.98,High Value,High Value,True,1,Loyal
+584,2005-08-01,13,58.87,12,44.88,High Value,High Value,True,2,High Value
+585,2005-07-01,13,70.87,4,13.96,High Value,High Value,True,2,High Value
+585,2005-08-01,6,27.94,13,70.87,Low Value,Low Value,True,0,Low Value
+585,2006-02-01,1,4.99,6,27.94,Low Value,Low Value,True,0,Low Value
+586,2005-07-01,6,23.94,2,3.98,Low Value,High Value,False,1,Loyal
+586,2005-08-01,9,22.91,6,23.94,Low Value,High Value,False,1,Loyal
+587,2005-07-01,10,48.9,4,15.96,High Value,High Value,True,1,Loyal
+587,2005-08-01,9,36.91,10,48.9,Low Value,Low Value,True,0,Low Value
+587,2006-02-01,1,0.99,9,36.91,Low Value,Low Value,True,0,Low Value
+588,2005-07-01,14,52.86,5,24.95,High Value,High Value,True,2,High Value
+588,2005-08-01,8,29.92,14,52.86,Low Value,High Value,False,0,Low Value
+589,2005-07-01,10,37.9,5,30.95,Loyal,High Value,False,1,Loyal
+589,2005-08-01,10,49.9,10,37.9,High Value,Low Value,False,2,High Value
+590,2005-07-01,14,56.86,5,30.95,High Value,High Value,True,2,High Value
+590,2005-08-01,4,17.96,14,56.86,Low Value,Low Value,True,0,Low Value
+590,2006-02-01,1,2.99,4,17.96,Low Value,Low Value,True,1,Loyal
+591,2005-07-01,15,75.85,3,8.97,High Value,High Value,True,2,High Value
+591,2005-08-01,9,49.91,15,75.85,Big Spender,Big Spender,True,0,Low Value
+592,2005-07-01,15,61.85,5,24.95,High Value,High Value,True,2,High Value
+592,2005-08-01,8,23.92,15,61.85,Low Value,Low Value,True,0,Low Value
+592,2006-02-01,1,0.99,8,23.92,Low Value,Low Value,True,0,Low Value
+593,2005-07-01,12,44.88,4,20.96,High Value,Low Value,False,1,Loyal
+593,2005-08-01,8,35.92,12,44.88,Low Value,High Value,False,0,Low Value
+594,2005-07-01,14,65.86,6,23.94,High Value,High Value,True,2,High Value
+594,2005-08-01,3,18.97,14,65.86,Low Value,Low Value,True,0,Low Value
+595,2005-07-01,19,86.81,2,7.98,High Value,High Value,True,2,High Value
+595,2005-08-01,8,15.92,19,86.81,Low Value,Low Value,True,0,Low Value
+596,2005-07-01,6,21.94,2,3.98,Low Value,High Value,False,1,Loyal
+596,2005-08-01,13,46.87,6,21.94,High Value,High Value,True,1,Loyal
+596,2006-02-01,1,0.99,13,46.87,Low Value,Low Value,True,0,Low Value
+597,2005-07-01,7,26.93,3,7.97,Low Value,Big Spender,False,1,Loyal
+597,2005-08-01,12,47.88,7,26.93,High Value,High Value,True,2,High Value
+597,2006-02-01,1,4.99,12,47.88,Low Value,Low Value,True,0,Low Value
+598,2005-07-01,16,64.84,1,2.99,High Value,High Value,True,2,High Value
+598,2005-08-01,5,15.95,16,64.84,Low Value,Low Value,True,0,Low Value
+599,2005-07-01,7,29.93,4,20.96,Low Value,Low Value,True,1,Loyal
+599,2005-08-01,7,27.93,7,29.93,Low Value,Low Value,True,1,Loyal
