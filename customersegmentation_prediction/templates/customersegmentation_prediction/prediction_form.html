@@ -2,6 +2,29 @@
 
 {% block content %}
 <style>
+    /* 1. Style untuk Overlay Loading (Tetap Ada) */
+    .form-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .loading-overlay {
+        display: none; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.7); 
+        z-index: 10;
+        backdrop-filter: blur(2px);
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    /* 2. Style Asli Kamu (Jangan Diubah) */
     .fade-in-up {
         animation: fadeInUp 0.5s ease-out;
     }
@@ -62,7 +85,7 @@
         transition: all 0.3s ease;
     }
 
-    .btn-run:hover {
+    .btn-run:hover:not(:disabled) {
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
@@ -75,38 +98,47 @@
 
 <div class="row fade-in-up" style="animation-delay: 0.1s;">
     <div class="col-md-6 mb-4">
-        <div class="card p-4 shadow-sm border-0 h-100" style="border-radius: 15px;">
-            <h5 class="card-title mb-4 fw-bold">Input Customer Metrics</h5>
-            <form method="POST">
-                {% csrf_token %}
-                <div class="mb-3">
-                    <label class="form-label text-primary">Current Total Spending ($)</label>
-                    <input type="number" step="0.01" name="total_spending" class="form-control" placeholder="e.g. 500.50" required>
+        <div class="form-wrapper shadow-sm">
+            <div class="loading-overlay" id="formOverlay">
+                <div class="text-center">
+                    <div class="spinner-border text-primary mb-2" role="status"></div>
+                    <div class="fw-bold text-primary">Analyzing...</div>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label text-primary">Current Rental Count</label>
-                    <input type="number" name="rental_count" class="form-control" placeholder="e.g. 15" required>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label">Previous Spending</label>
-                        <input type="number" step="0.01" name="prev_spending" class="form-control" placeholder="0.00" required>
+            </div>
+
+            <div class="card p-4 border-0 h-100" style="border-radius: 15px;">
+                <h5 class="card-title mb-4 fw-bold">Input Customer Metrics</h5>
+                <form method="POST" id="predictionForm">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label text-primary">Current Total Spending ($)</label>
+                        <input type="number" step="0.01" name="total_spending" class="form-control" placeholder="e.g. 500.50" required>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label">Previous Rental</label>
-                        <input type="number" name="prev_rental" class="form-control" placeholder="0" required>
+                    <div class="mb-3">
+                        <label class="form-label text-primary">Current Rental Count</label>
+                        <input type="number" name="rental_count" class="form-control" placeholder="e.g. 15" required>
                     </div>
-                </div>
-                <hr class="my-4 opacity-25">
-                <button type="submit" class="btn btn-dark w-100 btn-run" id="btnSubmit">
-                    <span id="btnText">
-                        <i class="bi bi-lightning-fill me-1"></i> Run Prediction Analysis
-                    </span>
-                    <div id="btnLoading" class="spinner-border spinner-border-sm d-none" role="status">
-                        <span class="visually-hidden">Loading...</span>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Previous Spending</label>
+                            <input type="number" step="0.01" name="prev_spending" class="form-control" placeholder="0.00" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Previous Rental</label>
+                            <input type="number" name="prev_rental" class="form-control" placeholder="0" required>
+                        </div>
                     </div>
-                </button>
-            </form>
+                    <hr class="my-4 opacity-25">
+                    <button type="submit" class="btn btn-dark w-100 btn-run" id="btnSubmit">
+                        <span id="btnText">
+                            <i class="bi bi-lightning-fill me-1"></i> Run Prediction Analysis
+                        </span>
+                        <div id="btnLoading" class="spinner-border spinner-border-sm d-none" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -190,20 +222,21 @@
         </div>
     </div>
 </div>
-<script>
-        document.querySelector('form').addEventListener('submit', function() {
-            const btn = document.getElementById('btnSubmit');
-            const btnText = document.getElementById('btnText');
-            const btnLoading = document.getElementById('btnLoading');
-
-            btn.disabled = true;
-
-            btnText.classList.add('d-none');
-            btnLoading.classList.remove('d-none');
-
-            btn.classList.replace('btn-dark', 'btn-secondary');
-        });
-    </script>
 {% endif %}
+
+<script>
+    document.getElementById('predictionForm').addEventListener('submit', function() {
+        const btn = document.getElementById('btnSubmit');
+        const btnText = document.getElementById('btnText');
+        const btnLoading = document.getElementById('btnLoading');
+        const overlay = document.getElementById('formOverlay');
+
+        overlay.style.display = 'flex';
+        btn.disabled = true;
+        btnText.classList.add('d-none');
+        btnLoading.classList.remove('d-none');
+        btn.classList.replace('btn-dark', 'btn-secondary');
+    });
+</script>
 
 {% endblock %}

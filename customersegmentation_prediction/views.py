@@ -142,7 +142,7 @@ def prediction_form_view(request):
 def customer_data_view(request):
     df = get_data()
     customer_data = df.to_dict(orient='records') if not df.empty else []
-    return render(request, 'customersegmentaion_prediction/customer_data.html', {'customer_data': customer_data})
+    return render(request, 'customersegmentation_prediction/customer_data.html', {'customer_data': customer_data})
 
 def export_customer_csv(request):
     df = get_data()

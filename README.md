@@ -1,52 +1,46 @@
-# Customer Intelligence System 🚀
-**An AI-Powered Customer Segmentation Platform built with Django & Machine Learning.**
+# 📊 Automated Customer Segmentation Dashboard
+This project is a web-based dashboard for **Customer Behavior Analysis** and **Automated Segmentation** using Machine Learning. Built as part of the Advanced Database Final Project.
 
-## 📌 Project Overview
-This project is an end-to-end data science application designed to analyze customer behavioral data from a DVD Rental business. It integrates an **ETL (Extract, Transform, Load)** pipeline with an **Unsupervised Machine Learning** model to segment customers into actionable groups: **High Value**, **Loyal**, and **Low Value**.
+## 🚀 Features
+- **Predictive Modeling**: Real-time customer segmentation using K-Means Clustering.
+- **Data Analytics**: Interactive visualization of customer distributions and spending trends.
+- **Database Integration**: Robust data management with PostgreSQL/SQLite.
+- **Modern UI**: Clean, responsive dashboard with loading states and animations.
 
-## 🛠️ Technical Stack
-* **Backend:** Python 3.14+, Django 6.0
-* **Machine Learning:** Scikit-Learn (K-Means Clustering), Joblib
-* **Data Analysis:** Pandas, NumPy
-* **Database:** PostgreSQL (Source) & CSV (Data Lake)
-* **Frontend:** HTML5, CSS3 (Bootstrap 5), JavaScript, Chart.js
+---
 
-## ✨ Key Features
-* **Executive Dashboard:** Real-time KPI scorecards for Revenue, Customer count, and Segment dominance.
-* **Interactive Analytics:** Data visualization using Bar Charts and Scatter Plots.
-* **Dynamic AI Recommendations:** Logic-based business strategies that adapt to current data trends.
-* **Real-time Prediction AI:** A dedicated tool to predict a new customer's segment based on their metrics.
-* **Data Export:** One-click CSV export for marketing team collaboration.
-* **Prediction History:** Session-based tracking of recent AI analyses.
+## 📸 Project Preview
 
-## 📊 Model Performance
-* **Algorithm:** K-Means Clustering
-* **Optimal K:** 3 (Validated via Elbow Method)
-* **Silhouette Score:** 0.68 (Indicating strong cluster separation)
+### 🏠 Prediction & Machine Learning
+*Input customer metrics (Spending, Frequency) to get instant segmentation results.*
 
-## 📁 Project Structure
-```text
-customersegmentation_project/
-│
-├── customersegmentation_prediction/  # Main App Folder
-│   ├── management/commands/          # ETL Scripts
-│   ├── templates/                    # Dashboard UI (HTML/CSS)
-│   └── views.py                      # Backend Logic
-├── customer_segmentation.csv         # Processed Data
-├── kmeans_model.pkl                  # Trained AI Model
-├── manage.py                         # Django Entry Point
-└── README.md                         # Documentation
+| Before Analysis | Analyzing State | AI Result |
+| :---: | :---: | :---: |
+| ![Input](assets/predictionpage_1.png) | (Loading Effect) | ![Result](assets/predictionpage_2.png) |
 
-## 🚀 How to Run
+### 📈 Analytics & Insights
+*Visualizing customer clusters and data trends for business decision-making.*
 
-1. **Clone the repository:**
+![Analytics 1](assets/analyticspage_1.png)
+![Analytics 2](assets/analyticspage_2.png)
+
+### 👥 Customer Data Management
+*Detailed view of all analyzed customers and their historical records.*
+
+![Data Page](assets/customerdatapage_1.png)
+
+---
+
+## 🛠️ Tech Stack
+- **Backend**: Python (Django Framework)
+- **Database**: PostgreSQL / SQLite3
+- **Data Science**: Scikit-Learn (K-Means), Pandas, NumPy
+- **Frontend**: HTML5, CSS3 (Bootstrap 5), JavaScript
+
+---
+
+## ⚙️ Installation & Setup
+1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-2. Install dependencies:
-pip install -r requirements.txt
-3. Run ETL Pipeline (Optional):
-python manage.py etl_customer_segmentation
-4. Start the server:
-python manage.py runserver
-5. Access the dashboard at http://127.0.0.1:8000
+   git clone [https://github.com/puspitatrir28/automated-customer-segmentation.git](https://github.com/username/automated-customer-segmentation.git)
 Developed with ❤️ by Puspita Tri Rahayu
